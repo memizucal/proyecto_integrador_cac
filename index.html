@@ -4,21 +4,32 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/estilos.css"></link>
 	<title>Funko Shop</title>
 </head>
 <body>
-	<header>
-		<div>
+	<header >
+		<div id="logo">
 			<img src="./multimedia/branding/logo_light_horizontal.svg" alt="">			
 		</div>
-		<nav>
-				<button>SHOP</button>
-				<button>CONTACTO</button>
-				<button>LOGIN</button>
-				<button><img src="./multimedia/icons/cart-icon.svg" alt=""></button>
-		</nav>
-		
+		<nav class="container">
+			<ul class="menus">
+				<button>SHOP<span class="arrow"></span></button>
+				<li>CONTACTO</li>
+				<li>LOGIN</li>
+				<li><img src="./multimedia/icons/cart-icon.svg" alt=""></li>
+			</ul>			
+		</nav>		
 	</header>
+	<main>
+		<div class="container-main">
+			<h1>Nuevos Ingresos</h1>
+			<p>Descubrí el próximo Funko Pop de tu colección</p>
+			<button>SHOP</button>
+		</div>
+	</main>
 </body>
 </html>

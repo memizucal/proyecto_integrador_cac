@@ -1,13 +1,79 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
 header{
 	background-color: #30343F;
+	display: flex;	
+	padding: 30px;
 }
 
-li{
-	color:white;
+#logo{
+	align-self: flex-start;
+	width: 50%;
 }
 
-nav button{
+.container{
+	display: flex;
+	flex-direction: row;	
+	width: 50%;	
+	justify-content: space-around;
+	
+}
+
+.menus{
+	display:flex;
+	flex-direction: row;	
+	align-items: center;
+	gap: 49px;	
+	list-style: none;
 	background-color: #30343F;
-	color: white;
+	color: #FFFFFF;
 	border: 0px;
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.arrow {
+	width: 0.5em;
+	height: 0.5em;
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 0.15em solid currentColor;
+	border-bottom: 0.15em solid currentColor;
+	transform: rotate(-45deg);
+	margin-left: 0.38em;
+	margin-top: -0.25em;
+}
+
+  button{
+	background-color: transparent;
+	border:0;
+	color: white;
+	font-family: Raleway;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+main{
+	background-image: url(../multimedia/funkos-banner.webp);
+	height: 388px;
+	background-color: #C4C4C4;
+	background-size: cover;
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	filter:blur(2px);
+}
+
+.container-main{
+	
 }
