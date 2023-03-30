@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.header{
+	background-color: #30343F;
+	display: flex;
+	width: auto;
+	height: 144px;	
+}
+
+.header-logo{
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 50%;
+	margin-left:110px;
+}
+
+.header-nav{
+	display: flex;
+	flex-direction: row;	
+	width: 50%;	
+	justify-content: flex-end;
+	
+}
+
+.header-links{
+	display:flex;
+	flex-direction: row;	
+	align-items: center;
+	gap: 49px;	
+	list-style: none;
+	background-color: #30343F;
+	color: #FFFFFF;
+	border: 0px;
+	font-family: 'Raleway';
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.arrow {
+	width: 0.5em;
+	height: 0.5em;
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 0.15em solid currentColor;
+	border-bottom: 0.15em solid currentColor;
+	transform: rotate(-45deg);
+	margin-left: 0.38em;
+	margin-top: -0.25em;
+}
+
+.header-shop{
+	background-color: transparent;
+	border:0;
+	color: white;
+	font-family: 'Raleway';
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.header-cart-icon{
+	width: 34px;
+	height: 24px;	
+	margin-right: 100px;
+}
