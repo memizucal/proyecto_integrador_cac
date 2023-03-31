@@ -1,7 +1,14 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .widget-last-releases{
 	display: flex;
 	flex-direction: column;
 }
+
 .last-releases-tittle{
 	font-family: Raleway;
 	color:#111111;
@@ -30,7 +37,7 @@
 	flex-direction: column;
 }
 
-.last-release-info{
+.product-info{
 	font-family: 'Inter';
 	font-style: normal;
 	margin-top:28px;
@@ -42,25 +49,25 @@
 	margin-bottom: 87px;
 }
 
-.last-release-brand{
+.product-brand{
 	font-weight: 500;
 	font-size: 14px;
 	color:#333333;
 }
 
-.last-release-character{	
+.product-character{	
 	font-weight: 700;
 	font-size: 18px;
 	color:#111111;
 }
 
-.last-release-price{	
+.product-price{	
 	font-weight: 400;
 	font-size: 16px;
 	color:#333333;
 }
 
-.last-release-payment{
+.product-payment{
 	font-weight: 700;
 	font-size: 12px;
 	color:#1D84B5;	

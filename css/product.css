@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.product-grid{
+	width: 80%;
+	display: grid;
+	margin-top: 68px;
+	justify-content: space-around;
+	grid-template-columns:  304px 304px 304px;
+	grid-template-rows: 512px 512px 512px;
+	column-gap:10px;
+	row-gap: 36px;	
+}
+
+.img-product{
+	width: 304px;
+	height: 352px;
+}
+
+.pages{
+	padding:68px;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
