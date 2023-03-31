@@ -9,6 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap" rel="stylesheet">	
 	<link rel="stylesheet" href="./css/header.css"></link>
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/widget.css">
+	<link rel="stylesheet" href="./css/footer.css">
 	<title>Funko Shop</title>
 </head>
 <body>
@@ -27,27 +29,93 @@
 	</header>
 	<main class="main">
 		<div class="main-banner">
-			<div class="main-blur">
+			<div class="main-filters">
 				<div class="main-content">
 					<h4>Nuevos Ingresos</h4>
 					<h6>Descubrí el próximo Funko Pop de tu colección</h6>
 					<button class="main-shop">SHOP</button>
-				</div>
+				</div>							
 			</div>			
 		</div>
-		<div class="main-container">
-			<div class="main-starwars">
-				<h4>STAR WARS & THE MANDALORIAN </h4>
-				<h6>Disfruta de una saga que sigue agregando personajes a su colección.</h6>
+		<div class="main-container main-sw">
+			<div class="main-character main-starwars">
+				<h4 class="main-h4">STAR WARS & THE MANDALORIAN </h4>
+				<h6 class="main-h6">Disfruta de una saga que sigue agregando personajes a su colección.</h6>
 				<hr class="main-line">
 				<button class="main-collection-button">VER COLECCIÓN</button>				
 			</div>
 			<div class="main-image">
 				<img src="./multimedia/star-wars/baby-yoda-1.webp" alt="">
+			</div>			
+		</div>	
+		<div class="main-container main-pk">
+			<div class="main-image">
+				<img src="./multimedia/pokemon/vulpix-1.webp" alt="">
+			</div>	
+			<div class="main-character main-pokemon">
+				<h4 class="main-h4">POKEMON INDIGO </h4>
+				<h6 class="main-h6">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</h6>
+				<hr class="main-line">
+				<button class="main-collection-button">VER COLECCIÓN</button>				
+			</div>					
+		</div>
+		<div class="main-container main-hp">
+			<div class="main-character main-harry-potter">
+				<h4 class="main-h4">HARRY POTTER</h4>
+				<h6 class="main-h6">Revive los recuerdos de una saga llena de magia y encanto.</h6>
+				<hr class="main-line">
+				<button class="main-collection-button">VER COLECCIÓN</button>				
 			</div>
-			
-			
-		</div>		
+			<div class="main-image">
+				<img src="./multimedia/harry-potter/snape-patronus-1.webp" alt="">
+			</div>			
+		</div>
+		<div class="widget-last-releases">
+			<span class="last-releases-tittle">ÚLTIMOS LANZAMIENTOS</span>
+			<div class="last-releases">
+				<div class="last-releases release">
+					<img class="last-releases-img"src="./multimedia/star-wars/trooper-1.webp" alt="">
+					<div class="last-release-info">
+						<h5 class="last-release-brand">STAR WARS</h5>
+						<h6 class="last-release-character">STORMTROOPER LIGHTSABER</h6>
+						<span class="last-release-price">$ 1799,99.-</span>
+						<span class="last-release-payment">3 CUOTAS SIN INTERÉS</span>
+					</div>
+				</div>
+				<div class="last-releases release">
+					<img class="last-releases-img" src="./multimedia/pokemon/pidgeotto-1.webp" alt="">
+					<div class="last-release-info">
+						<h5 class="last-release-brand">POKEMON</h5>
+						<h6 class="last-release-character">PIDGEOTTO</h6>
+						<span class="last-release-price">$ 1799,99.-</span>
+						<span class="last-release-payment">3 CUOTAS SIN INTERÉS</span>
+					</div>
+				</div>
+				<div class="last-releases release">
+					<img class="last-releases-img" src="./multimedia/harry-potter/luna-1.webp" alt="">
+					<div class="last-release-info">
+						<h5 class="last-release-brand">HARRY POTTER</h5>
+						<h6 class="last-release-character">LUNA LOVEGOOD LION MASK</h6>
+						<span class="last-release-price">$ 1799,99.-</span>
+						<span class="last-release-payment">3 CUOTAS SIN INTERÉS</span>
+					</div>
+				</div>
+			</div>			
+		</div>					
 	</main>
+	<footer class="footer">
+		<div class="footer-links">
+			<ul class="links">
+				<li class="footer-shop">SHOP</li>
+				<li class="footer-register">REGISTRARSE</li>
+				<li class="footer-login">INGRESAR</li>
+				<li class="footer-contact">CONTACTO</li>
+			</ul>
+		</div>
+		<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+		<div class="footer-logo"><img src="./multimedia/branding/isotype.svg" alt=""></div>
+		
+		
+	</footer>
 </body>
 </html>
