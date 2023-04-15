@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.header{
+	background-color: #30343F;
+	display: flex;
+	height: 144px;	
+}
+
+.header-nav{
+	display: flex;
+	flex-direction: row;	
+	width: 1200px;	
+	margin: 0 auto;	
+}
+
+.header-logo{
+	display:flex;
+	align-items: center;
+	width: 50%;
+}
+
+.header-links{
+	display:flex;
+	width: 50%;
+	flex-direction: row;
+	justify-content: flex-end;	
+	align-items: center;
+	gap: 49px;	
+	list-style: none;
+	background-color: #30343F;
+	color: #FFFFFF;
+	border: 0px;
+	font-family: 'Raleway';
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.header-shop{
+	background-color: transparent;
+	gap:0;
+}
+
+.arrow {
+	width: 0.5em;
+	height: 0.5em;
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 0.15em solid currentColor;
+	border-bottom: 0.15em solid currentColor;
+	transform: rotate(-45deg);
+	margin-left: 0.38em;
+	margin-top: -0.25em;
+}
+
+.header-cart-icon{
+	width: 34px;
+	height: 24px;
+}

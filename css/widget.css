@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.widget-last-releases{
+	display: flex;
+	flex-direction: column;
+}
+
+.last-releases-tittle{
+	font-family: Raleway;
+	color:#111111;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 54px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-left:110px;
+	margin-bottom:57px;	
+}
+
+.last-releases{
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-evenly;
+	align-items: flex-start;	
+}
+
+.last-releases-img{
+	width: 360px;	
+}
+
+.release{
+	display: flex;
+	flex-direction: column;
+}
+
+.product-info{
+	font-family: 'Inter';
+	font-style: normal;
+	margin-top:28px;
+	line-height: 30px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;	
+	margin-left:14px;
+	margin-bottom: 87px;
+}
+
+.product-brand{
+	font-weight: 500;
+	font-size: 14px;
+	color:#333333;
+}
+
+.product-character{	
+	font-weight: 700;
+	font-size: 18px;
+	color:#111111;
+}
+
+.product-price{	
+	font-weight: 400;
+	font-size: 16px;
+	color:#333333;
+}
+
+.product-payment{
+	font-weight: 700;
+	font-size: 12px;
+	color:#1D84B5;	
+}
