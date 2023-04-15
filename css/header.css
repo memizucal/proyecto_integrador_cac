@@ -7,29 +7,27 @@
 .header{
 	background-color: #30343F;
 	display: flex;
-	width: auto;
 	height: 144px;	
-}
-
-.header-logo{
-	display:flex;
-	justify-content: flex-start;
-	align-items: center;
-	width: 50%;
-	margin-left:110px;
 }
 
 .header-nav{
 	display: flex;
 	flex-direction: row;	
-	width: 50%;	
-	justify-content: flex-end;
-	
+	width: 1200px;	
+	margin: 0 auto;	
+}
+
+.header-logo{
+	display:flex;
+	align-items: center;
+	width: 50%;
 }
 
 .header-links{
 	display:flex;
-	flex-direction: row;	
+	width: 50%;
+	flex-direction: row;
+	justify-content: flex-end;	
 	align-items: center;
 	gap: 49px;	
 	list-style: none;
@@ -44,6 +42,11 @@
 	text-align: left;
 }
 
+.header-shop{
+	background-color: transparent;
+	gap:0;
+}
+
 .arrow {
 	width: 0.5em;
 	height: 0.5em;
@@ -56,20 +59,7 @@
 	margin-top: -0.25em;
 }
 
-.header-shop{
-	background-color: transparent;
-	border:0;
-	color: white;
-	font-family: 'Raleway';
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 23px;
-	letter-spacing: 0em;
-	text-align: left;
-}
-
 .header-cart-icon{
 	width: 34px;
-	height: 24px;	
-	margin-right: 100px;
+	height: 24px;
 }
