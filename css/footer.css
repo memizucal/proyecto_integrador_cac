@@ -22,12 +22,12 @@
 	padding:85px;
 	line-height: 31px;	
 }
+
 .links{
 	list-style: none;
 }
 
 .footer-logo{
-	display: flex;
 	margin-right: 110px;
 	margin-top: 124px;
 	margin-bottom: 102px;
