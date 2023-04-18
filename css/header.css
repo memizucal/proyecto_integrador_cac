@@ -7,31 +7,38 @@
 .header{
 	background-color: #30343F;
 	display: flex;
+	min-width: 100vw;
 	height: 144px;	
+	padding: 0 110px;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
 }
 
 .header-nav{
+	width: 100%;
 	display: flex;
-	flex-direction: row;	
-	width: 1200px;	
-	margin: 0 auto;	
+	justify-content: flex-end;
 }
 
 .header-logo{
-	display:flex;
-	align-items: center;
-	width: 50%;
+	max-width: 81px;
+	min-width: 40px;	
+	height: 66px;
+}
+
+a{
+	text-decoration: none;
+	color:white;
 }
 
 .header-links{
 	display:flex;
-	width: 50%;
-	flex-direction: row;
-	justify-content: flex-end;	
 	align-items: center;
-	gap: 49px;	
+	gap: 80px;
+
+
 	list-style: none;
-	background-color: #30343F;
 	color: #FFFFFF;
 	border: 0px;
 	font-family: 'Raleway';
@@ -39,11 +46,13 @@
 	font-weight: 500;
 	line-height: 23px;
 	letter-spacing: 0em;
-	text-align: left;
+}
+
+.header-links:nth-child(1){
+	width:min-content;
 }
 
 .header-shop{
-	background-color: transparent;
 	gap:0;
 }
 
