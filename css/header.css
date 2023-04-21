@@ -1,50 +1,49 @@
 *{
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
 .header{
-	background-color: #30343F;
-	display: flex;
+	background-color:  #30343F;
 	height: 144px;	
+	width: 100vw;
 }
 
-.header-nav{
-	display: flex;
-	flex-direction: row;	
-	width: 1200px;	
-	margin: 0 auto;	
+.header-container{
+	display: grid;
+	grid-template-columns: 47% 47%;
+	grid-template-rows: 100%;
+	width: 100vw;	
+	height: 144px;
+	padding: 0 110px;	
+	align-items: center;
+	gap: 80px;
 }
 
 .header-logo{
-	display:flex;
+	display: flex;
+	justify-content: flex-start;
 	align-items: center;
-	width: 50%;
 }
 
 .header-links{
-	display:flex;
-	width: 50%;
+	display: flex;
+	justify-content: flex-end;
 	flex-direction: row;
-	justify-content: flex-end;	
-	align-items: center;
-	gap: 49px;	
+	gap: 49px;
 	list-style: none;
-	background-color: #30343F;
 	color: #FFFFFF;
 	border: 0px;
 	font-family: 'Raleway';
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 23px;
-	letter-spacing: 0em;
-	text-align: left;
+	line-height: 23px;	
 }
 
-.header-shop{
-	background-color: transparent;
-	gap:0;
+.header-item{
+	text-decoration: none;
+	color:white;	
 }
 
 .arrow {
@@ -58,6 +57,7 @@
 	margin-left: 0.38em;
 	margin-top: -0.25em;
 }
+
 
 .header-cart-icon{
 	width: 34px;
