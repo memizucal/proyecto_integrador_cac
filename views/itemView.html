@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="../css/widget.css">
 	<link rel="stylesheet" href="../css/footer.css">
 	<link rel="stylesheet" href="../css/item.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<title>Funko Shop - PRODUCTO</title>
 </head>
 <body>
@@ -24,7 +27,16 @@
 			</a>
 			<div class="header-nav">
 				<ul class="header-links">
-					<li><a href="../views/shopView.html" class="header-item">SHOP<span class="arrow"></span></a></li>
+					<div class="dropdown header-item">
+						<button class="dropdown-toggle" type="button" data-toggle="dropdown">SHOP
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+						<li><a class="header-item" href="../views/shopView.html">Ver todo</a></li>
+						  <li><a class="header-item" href="#">Starwars Collection</a></li>
+						  <li><a  class="header-item" href="#">Pokemon Collection</a></li>
+						  <li><a class="header-item" href="#">Harry Potter Collection</a></li>
+						</ul>
+					</div>
 					<li><a href="" class="header-item">CONTACTO</a></li>
 					<li><a href="" class="header-item">LOGIN</a></li>
 					<li><a href="" class="header-item"><img src="../multimedia/icons/cart-icon.svg" alt="" class="header-cart-icon"></a></li>
@@ -99,10 +111,10 @@
 	<footer class="footer">
 		<div class="footer-links">
 			<ul class="links">
-				<li class="footer-shop">SHOP</li>
-				<li class="footer-register">REGISTRARSE</li>
-				<li class="footer-login">INGRESAR</li>
-				<li class="footer-contact">CONTACTO</li>
+				<li><a class="footer-item" href="./views/shopView.html">SHOP</a></li>
+				<li><a class="footer-item" href="">REGISTRARSE</a></li>
+				<li><a class="footer-item" href="">INGRESAR</a></li>
+				<li><a class="footer-item" href="">CONTACTO</a></li>
 			</ul>
 		</div>
 		<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>

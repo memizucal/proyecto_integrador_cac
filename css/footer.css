@@ -14,14 +14,26 @@
 		font-size: 20px;
 		line-height: 23px;
 		color: #FFFFFF;
-		display: flex;
-		flex-direction: row;
+	}
+
+	.footer-container{
+		padding: 0 110px;
+		display: flex;		
 		justify-content: space-between;
+		max-width: 100%;
+		height: 343px;
+		align-items: center;
+
 	}
 
 	.footer-links {
-		padding: 85px;
 		line-height: 31px;
+		display: flex;
+	}
+
+	.footer-item{
+		text-decoration: none;
+		color:white;
 	}
 
 	.links {
@@ -29,11 +41,8 @@
 	}
 
 	.footer-logo {
-		margin-right: 110px;
-		margin-top: 124px;
-		margin-bottom: 102px;
-		width: 143px;
-		height: 116px;
+		max-width: 143px;
+		height: auto;
 	}
 
 	.footer-rights {

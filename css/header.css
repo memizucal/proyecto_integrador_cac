@@ -41,17 +41,16 @@
 		flex-direction: row;
 		gap: 49px;
 		list-style: none;
-		color: #FFFFFF;
-		border: 0px;
-		font-family: 'Raleway';
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 23px;
 	}
 
 	.header-item {
 		text-decoration: none;
 		color: white;
+		border: 0px;
+		font-family: 'Raleway';
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 23px;
 	}
 
 	.arrow {
@@ -71,4 +70,17 @@
 		height: 24px;
 	}
 
+	.dropdown-toggle {
+		background-color: #30343F;
+		border: none;
+		color: #FFFFFF;
+		font-family: 'Raleway';
+		font-size: 20px!;
+		font-weight: 500;
+		line-height: 23px;
+		width: 77px;
+	}
+
 }
+
+@media screen and (max-width: 991px) and (min-width: 689px) {}

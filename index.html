@@ -8,13 +8,14 @@
 	<link rel="shortcut icon" href="../multimedia/icons/icono.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/widget.css">
 	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<title>Funko Shop - HOME</title>
 </head>
 
@@ -25,12 +26,22 @@
 				<img class="logo" src="./multimedia/branding/logo_light_horizontal.svg" alt="">
 			</a>
 			<div class="header-nav">
-				<ul class="header-links">
-					<li><a href="./views/shopView.html" class="header-item">SHOP<span class="arrow"></span></a></li>
+				<ul class="header-links">					
+					<li>
+						<div class="dropdown header-item">
+							<button class="dropdown-toggle" type="button" data-toggle="dropdown">SHOP
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+							<li><a class="header-item" href="./views/shopView.html">Ver todo</a></li>
+							  <li><a class="header-item" href="#">Starwars Collection</a></li>
+							  <li><a  class="header-item" href="#">Pokemon Collection</a></li>
+							  <li><a class="header-item" href="#">Harry Potter Collection</a></li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="" class="header-item">CONTACTO</a></li>
 					<li><a href="" class="header-item">LOGIN</a></li>
-					<li><a href="" class="header-item"><img src="./multimedia/icons/cart-icon.svg" alt=""
-					class="header-cart-icon"></a></li>
+					<li><a href="" class="header-item"><img src="./multimedia/icons/cart-icon.svg" alt="" class="header-cart-icon"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -49,21 +60,21 @@
 					<h4 class="main-h4">STAR WARS & THE MANDALORIAN </h4>
 					<h6 class="main-h6">Disfruta de una saga que sigue agregando personajes a su colección.</h6>
 					<hr class="main-line">
-					<a  href="#" class="main-collection-button">VER COLECCIÓN</a>
+					<a href="#" class="main-collection-button">VER COLECCIÓN</a>
 				</div>
 				<div class="main-image">
 					<img class="item-img" src="./multimedia/star-wars/baby-yoda-1.webp" alt="">
 				</div>
 			</div>
 			<div class="main-container main-pk">
-				<div class="main-image"> 
+				<div class="main-image">
 					<img class="item-img" src="./multimedia/pokemon/vulpix-1.webp" alt="">
 				</div>
 				<div class="main-character main-pokemon">
 					<h4 class="main-h4">POKEMON INDIGO </h4>
 					<h6 class="main-h6">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</h6>
 					<hr class="main-line">
-					<a  href="#"  class="main-collection-button">VER COLECCIÓN</a>
+					<a href="#" class="main-collection-button">VER COLECCIÓN</a>
 				</div>
 			</div>
 			<div class="main-container">
@@ -121,16 +132,18 @@
 		</div>
 	</main>
 	<footer class="footer">
-		<div class="footer-links">
-			<ul class="links">
-				<li class="footer-shop">SHOP</li>
-				<li class="footer-register">REGISTRARSE</li>
-				<li class="footer-login">INGRESAR</li>
-				<li class="footer-contact">CONTACTO</li>
-			</ul>
+		<div class="footer-container">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="./views/shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="">INGRESAR</a></li>
+					<li><a class="footer-item" href="">CONTACTO</a></li>
+				</ul>
+			</div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+			<div class="footer-logo"><img src="./multimedia/branding/isotype.svg" alt=""></div>
 		</div>
-		<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
-		<div class="footer-logo"><img src="./multimedia/branding/isotype.svg" alt=""></div>
 	</footer>
 </body>
 
