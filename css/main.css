@@ -1,152 +1,165 @@
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;		
-}
+@media screen and (min-width:992px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 
-.main{
-	width: 100%;
-	max-width: 100%;
-	background-color: #F5F5F5;
-	overflow-x: hidden;
-}
+	.main {
+		width: 100%;
+		max-width: 100%;
+		background-color: #F5F5F5;
+		overflow-x: hidden;
+	}
 
-/* empieza banner */
+	/* empieza banner */
 
-.main-banner{
-	display:flex;
-	justify-content: flex-start;
-	align-items: center;
-	background-image: url(../multimedia/funkos-banner.png);
-	height: 388px;
-	background-color: #C4C4C4;
-	background-size: cover;
-	background-repeat: no-repeat;	
-}
+	.main-banner {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url(../multimedia/funkos-banner.png);
+		height: 388px;
+		background-color: #C4C4C4;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 
-.main-content{
-	color:white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 0 110px;
-	font-family: 'Raleway';
-}
+	.main-content {
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 110px;
+		font-family: 'Raleway';
+	}
 
-.main-content h4{	
-	font-size: 38px;
-	font-weight: 700;
-	line-height: 45px;
-		
-}
+	.main-content h4 {
+		font-size: 38px;
+		font-weight: 700;
+		line-height: 45px;
 
-.main-content h6{	
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 21px;		
-	margin-top: 7px;
-}
+	}
 
-.main-shop{
-	width: 211px;
-	height: 47px;
-	margin-top: 48px;
-	background-color: white;
-	border: none;
-	border-radius: 50px;
-	padding: 11px;
-	font-family: 'Inter';
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 24px;
-	color: #111111;
-	text-align: center;
-}
+	.main-content h6 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 21px;
+		margin-top: 7px;
+	}
 
-/* termina banner */
+	.main-shop {
+		width: 211px;
+		height: 47px;
+		margin-top: 48px;
+		background-color: white;
+		text-decoration: none;
+		border: none;
+		border-radius: 50px;
+		padding: 11px;
+		font-family: 'Inter';
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+		color: #111111;
+		text-align: center;
+	}
 
-.main-products{
-	padding: 0 110px;	
-}
+	/* termina banner */
 
-.main-container{
-	display: grid;	
-	min-height: calc(100% - 144px);
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 600px;
-	grid-template-areas:
-	"character image"
-	;
+	.main-products {
+		padding: 0 110px;
+	}
 
-}
+	.main-container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 600px;
+		grid-template-areas:
+			"character image"
+		;
+		min-width: 300px;
 
-.main-pk{
-	display:grid;
-	min-height: calc(100% - 144px);
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 600px;
-	grid-template-areas:
-	"image character"
-	;
-}
+	}
+
+	.main-pk {
+		display: grid;
+		min-height: calc(100% - 144px);
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 600px;
+		grid-template-areas:
+			"image character"
+		;
+	}
+
+	.main-character {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		grid-area: character;
+		max-width: 100vw;
+		min-width: 300px;
+		height: auto;
+	}
+
+	.main-h4 {
+		max-width: 441px;
+		font-family: Raleway;
+		font-size: 46px;
+		font-weight: 500;
+		line-height: 54px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 6px;
+	}
+
+	.main-h6 {
+		max-width: 458px;
+		font-family: Raleway;
+		color: #4F4F4F;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	.main-line {
+		max-width: 645px;
+		border: 3px solid #FF3333;
+		margin-top: 28px;
+	}
+
+	.main-collection-button {
+		width: 291px;
+		height: 65px;
+		margin-top: 34px;
+		padding: 18px 38px;
+		display: flex;
+		justify-content: center;
+		background-color: #30343F;
+		text-decoration: none;
+		border: none;
+		border-radius: 50px;
+		font-family: 'Inter';
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 29px;
+		letter-spacing: 0em;
+		color: white;
+		text-align: center;
+	}
 
 
-.main-character{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	grid-area: character;
-}
+	.main-image {
+		grid-area: image;
+		display: flex;
+		align-self: center;
+	}
 
-.main-h4{
-	width:441px;
-	font-family: Raleway;
-	font-size: 46px;
-	font-weight: 500;
-	line-height: 54px;
-	letter-spacing: 0em;
-	text-align: left;
-	margin-bottom: 6px;
-}
-
-.main-h6{
-	width: 458px;
-	font-family: Raleway;
-	color:#4F4F4F;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 28px;
-	letter-spacing: 0em;	
-	text-align: left;
-}
-
-.main-line{
-	width: 645px;
-	border: 3px solid #FF3333;		
-	margin-top: 28px;
-}
-
-.main-collection-button{
-	width: 291px;
-	height: 65px;
-	margin-top: 34px;	
-	padding: 18px 38px;
-	display: flex;
-	justify-content: center;
-	background-color:#30343F;
-	border: none;
-	border-radius: 50px;	
-	font-family: 'Inter';
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 29px;
-	letter-spacing: 0em;
-	color: white;
-	text-align: center;
-}
-
-
-.main-image{
-	grid-area: image;
+	.item-img {
+		max-width: 100%;
+		height: auto;
+	}
 }
