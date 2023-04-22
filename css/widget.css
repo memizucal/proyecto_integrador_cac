@@ -8,7 +8,7 @@
 	.widget-last-releases {
 		display: flex;
 		flex-direction: column;
-		padding: 0 100px;
+		padding: 0 110px 68px 110px;
 	}
 
 	.last-releases-tittle {
@@ -46,8 +46,7 @@
 		line-height: 30px;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		padding: 28px 14px 87px;
+		justify-content: flex-start;	
 	}
 
 	.product-brand {

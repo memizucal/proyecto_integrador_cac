@@ -9,7 +9,7 @@
 	.header {
 		background-color: #30343F;
 		height: 144px;
-		width: 100vw;
+		max-width: 100vw;
 	}
 
 	.header-container {
