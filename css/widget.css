@@ -1,20 +1,23 @@
-@media screen and (min-width:992px) {
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 	}
 
+	html{
+		font-size: 62.5%;
+	}
+
 	.widget-last-releases {
 		display: flex;
 		flex-direction: column;
-		padding: 0 110px 68px 110px;
+		padding: 0 max(7.5%, 20px) 68px;
 	}
 
 	.last-releases-tittle {
 		font-family: Raleway;
 		color: #111111;
-		font-size: 46px;
+		font-size: 4.6rem;
 		font-weight: 700;
 		line-height: 54px;
 		margin-bottom: 57px;
@@ -51,25 +54,25 @@
 
 	.product-brand {
 		font-weight: 500;
-		font-size: 14px;
+		font-size: 1.4rem;
 		color: #333333;
 	}
 
 	.product-character {
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 1.8rem;
 		color: #111111;
 	}
 
 	.product-price {
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 1.6rem;
 		color: #333333;
 	}
 
 	.product-payment {
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 1.2rem;
 		color: #1D84B5;
 	}
 
@@ -87,9 +90,17 @@
 
 	.background-span {
 		color: #FFF;
-		font-size: 14px;
+		font-size: 1.4rem;
 		font-family: 'Inter';
 		font-weight: 500;
 		padding: 5px 20px;
 	}
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 50%;
+	}
+
 }

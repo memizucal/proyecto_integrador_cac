@@ -1,8 +1,12 @@
-@media screen and (min-width:992px) {
+
 	* {
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
+		box-sizing: border-box;	
+	}
+
+	html{
+		font-size: 62.5%;
 	}
 
 
@@ -31,7 +35,7 @@
 
 	.item .product-brand {
 		font-family: Inter;
-		font-size: 16px;
+		font-size: 1.6rem;
 		font-weight: 500;
 		line-height: 19px;
 		margin-bottom: 11px;
@@ -39,7 +43,7 @@
 
 	.item .product-character {
 		font-family: Inter;
-		font-size: 38px;
+		font-size: 3.8rem;
 		font-weight: 700;
 		line-height: 46px;
 		margin-bottom: 15.81px;
@@ -47,7 +51,7 @@
 
 	.item .product-description {
 		font-family: Inter;
-		font-size: 24px;
+		font-size: 2.4rem;
 		font-weight: 400;
 		line-height: 29px;
 		margin-bottom: 15.81px;
@@ -55,7 +59,7 @@
 
 	.item .product-price {
 		font-family: Inter;
-		font-size: 38px;
+		font-size: 3.8rem;
 		font-weight: 400;
 		line-height: 46px;
 		margin-bottom: 26px;
@@ -101,14 +105,14 @@
 		color: white;
 		padding: 8px 15px;
 		font-family: Inter;
-		font-size: 18px;
+		font-size: 1.8rem;
 		font-weight: 400;
 		line-height: 22px;
 	}
 
 	.payment-methods {
 		font-family: Inter;
-		font-size: 14px;
+		font-size: 1.4rem;
 		font-weight: 700;
 		line-height: 17px;
 		color: #1D84B5;
@@ -118,8 +122,16 @@
 	.product-payment {
 		color: #1D84B5;
 		font-family: Inter;
-		font-size: 14px;
+		font-size: 1.4rem;
 		font-weight: 700;
 		line-height: 17px;
 	}
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 50%;
+	}
+
 }

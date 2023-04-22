@@ -1,5 +1,3 @@
-@media screen and (min-width:992px) {
-
 
 	* {
 		margin: 0;
@@ -7,10 +5,14 @@
 		box-sizing: border-box;
 	}
 
-	.main-shop {
-		padding: 68px 110px 0 110px;
+	html{
+		font-size: 62.5%;
+	}
+
+	.main-shop {	
 		display: flex;
 		gap: 15px;
+		padding: max(6.5%, 10px) max(7.5%, 20px);
 	}
 
 	.sidebar {
@@ -21,13 +23,15 @@
 		font-style: normal;
 		line-height: 48px;
 		font-weight: 500;
-		font-size: 24px;
+		font-size: 2.4rem;
 	}
 
 	.options {
 		padding-bottom: 28px;
 		display: flex;
 		flex-direction: column;
+		font-size: 2.4rem;
+		max-width: 230px;
 	}
 
 	.input {
@@ -39,7 +43,7 @@
 	}
 
 	.input::placeholder {
-		font-size: 20px;
+		font-size: 2rem;
 		font-weight: 500;
 		line-height: 24px;
 		letter-spacing: 0em;
@@ -48,16 +52,20 @@
 		color: #B9B9B9;
 	}
 
+	.search-input{
+		max-width: 230px;
+	}
+
 	.order-input {
 		max-width: 100%;
 		font-family: 'Inter';
-		font-size: 20px;
+		font-size: 2rem;
 		color: #B9B9B9;
 		padding-left: 11px;
 	}
 
 	.price-options {
-		font-size: 16px;
+		font-size: 1.6rem;
 		font-weight: 500;
 		line-height: 19px;
 		letter-spacing: 0em;
@@ -78,7 +86,7 @@
 	.checkbox-options {
 		display: flex;
 		flex-direction: column;
-		font-size: 18px;
+		font-size: 1.8rem;
 		align-items: flex-start;
 	}
 
@@ -98,7 +106,13 @@
 		line-height: 34px;
 		color: #30343F;
 	}
-	
 
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 50%;
+	}
 
 }

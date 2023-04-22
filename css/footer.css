@@ -1,8 +1,11 @@
-@media screen and (min-width:992px) {
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+
+	html{
+		font-size: 62.5%;
 	}
 
 	.footer {
@@ -11,13 +14,13 @@
 		font-family: 'Raleway';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 2rem;
 		line-height: 23px;
 		color: #FFFFFF;
 	}
 
 	.footer-container{
-		padding: 0 110px;
+		padding: 0 max(7.5%, 20px);
 		display: flex;		
 		justify-content: space-between;
 		max-width: 100%;
@@ -51,7 +54,22 @@
 		font-family: 'Raleway';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 2rem;
 		line-height: 23px;
 	}
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 55%;
+	}
+
+	.footer{
+		height: max(135px, 34.5vw);
+	}
+
+	.footer-container{
+		height: max(135px, 34.5vw);
+	}
+
 }

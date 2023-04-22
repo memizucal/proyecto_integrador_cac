@@ -1,8 +1,12 @@
-@media screen and (min-width: 992px) {
+
 	* {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+
+	html{
+		font-size: 62.5%;
 	}
 
 	.product-grid {
@@ -10,14 +14,21 @@
 		display: grid;
 		justify-content: space-around;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: auto auto auto;
-		column-gap: 70px;
-		row-gap: 70px;
+		grid-template-rows: auto auto auto auto;
+		column-gap: 30px;
+		row-gap: 30px;
+		grid-template-areas: 
+		"product-1 product-2 product-3"
+		"product-4 product-5 product-6"
+		"product-7 product-8 product-9"
+		"pages pages pages"
+		;
 	}
 
 	.product{
 		max-width: 500px;
 		height: 100%;
+		grid-area: product;
 	}
 
 	.img-product {
@@ -27,12 +38,13 @@
 	}
 
 	.pages {
-		padding: 68px;
+		padding: 0 max(7.5%, 20px);
 		background-color: white;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-content: center;
+		grid-area: pages;
 	}
 
 	.pagination-list{
@@ -62,7 +74,7 @@
 		height: 34px;
 		padding: 5px 4px;
 		font-family: Inter;
-		font-size: 16px;
+		font-size: 1.6rem;
 		font-weight: 700;	
 		letter-spacing: 0em;
 		text-align: center;
@@ -75,6 +87,13 @@
 		color:#FF3333;
 		border: 1px solid #FF3333;
 	}
-
 	
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 50%;
+	}
+
 }
