@@ -108,11 +108,66 @@
 @media screen and (max-width: 688px) {
 
 	html{
-		font-size:35%;
+		font-size:45%;
+	}
+
+	
+	.widget-last-releases{
+		padding: max(5.5%, 20px) max(5.5%, 20px);
+	}
+	
+	.last-releases-tittle{
+		padding: 0 max(7.5%, 20px) max(7.5%, 20px);
+		margin:0;
+	}
+	
+	.last-releases{
+		flex-direction: column;
+		width: 100%;
+		height: auto;	
+	}
+	
+	.release{
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	.last-releases-img{
+		max-width:100%;
+		height: auto;		
+		align-self: flex-start;
 	}
 
 	.product-info{
 		padding: 10px;
+		max-width: 100%;
+		min-width: 300px;
+		height: auto;
+	}
+
+	.product-brand {
+		font-weight: 500;
+		font-size: 3rem;
+		color: #333333;
+	}
+
+	.product-character {
+		font-weight: 700;
+		font-size: 2.5rem;
+		color: #111111;
+	}
+
+	.product-price {
+		font-weight: 400;
+		font-size: 2.3rem;
+		color: #333333;
+	}
+
+	.product-payment {
+		font-weight: 700;
+		font-size: 2.4rem;
+		color: #1D84B5;
 	}
 
 }

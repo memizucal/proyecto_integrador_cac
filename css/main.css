@@ -178,3 +178,30 @@
 		height:max(145px, 37vw);
 	}
 }
+
+@media screen and (max-width: 688px){
+
+	html{
+		font-size: 35%;
+	}
+
+	.main-container{
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"image"
+		"character"
+		;
+
+		align-items: center;
+		max-width: 610px;
+	}
+	
+	.main-products {
+		padding: 0 max(5.5%, 10px);
+	}
+
+	.main-character{
+		padding: 0 max(1.5%, 20px);
+	}
+}

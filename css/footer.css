@@ -46,6 +46,7 @@
 	.footer-logo {
 		max-width: 143px;
 		height: auto;
+		align-self: center;
 	}
 
 	.footer-rights {
@@ -71,6 +72,44 @@
 
 	.footer-container{
 		height: max(135px, 34.5vw);
+	}
+
+}
+
+@media screen and (max-width:688px){
+
+	html{
+		font-size: 45%;
+	}
+
+	.footer{
+		height: max(135px, 60.5vw);
+	}
+
+	.footer-container{
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;	
+		height: max(135px, 60vw);
+		padding: max(0.5%, 15px)
+	}
+	
+	.footer-links{
+		max-width: 100%;
+		height: auto;
+	}
+	.footer-item{
+		font-size: 3rem;
+	}
+	
+	.footer-rights{
+		align-self: center;
+		font-size: 3rem;
+	}
+	
+	.footer-logo{
+		max-width: 100%;
+		padding: 20px;
 	}
 
 }
