@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../multimedia/icons/icono.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/widget.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/item.css">
+	<title>Funko Shop - PRODUCTO</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header-container" >
+			<a href="../index.html" class="header-logo">
+				<img class="logo" src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+			</a>
+			<div class="header-nav">
+				<ul class="header-links">
+					<div class="dropdown header-item">
+						<button class="dropdown-toggle" type="button" data-toggle="dropdown">SHOP
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+						<li><a class="header-item" href="../views/shopView.html">Ver todo</a></li>
+						<li><a class="header-item" href="../views/itemViewSW.html">Starwars Collection</a></li>
+						<li><a  class="header-item" href="../views/itemViewPK.html">Pokemon Collection</a></li>
+						<li><a class="header-item" href="../views/itemViewHP.html">Harry Potter Collection</a></li>
+						</ul>
+					</div>
+					<li><a href="" class="header-item">CONTACTO</a></li>
+					<li><a href="" class="header-item">LOGIN</a></li>
+					<li><a href="" class="header-item"><img src="../multimedia/icons/cart-icon.svg" alt="" class="header-cart-icon"></a></li>
+				</ul>
+			</div>
+			<!-- Dropdown menu -->
+			<div class="dropdown header-dropdown">
+				<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="header-item" href="../views/shopView.html">SHOP</a></li>
+					<li><a class="header-item" href="#">CONTACTO</a></li>
+					<li><a class="header-item" href="#">LOGIN</a></li>
+					<li><a class="header-item" href="#">CARRITO</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="item">
+		<img class="sw-img" src="../multimedia/pokemon/dragonite-1.webp" alt="">
+		<div class="product-info">
+			<h5 class="product-brand">POKEMON</h5>
+			<h6 class="product-character">DRAGONITE</h6>
+			<p class="product-description"> Figura coleccionable de Dragonite - Pokemon, edición limitada.</p>
+			<span class="product-price">$ 1799,99.-</span>
+			<div class="item-purchase">
+				<div class="item-number-selector"> 
+					<div class="minus">-</div>
+					<div class="number">0</div>
+					<div class="plus">+</div>
+				</div>
+				<span class="cart"> Agregar al carrito </span>
+			</div>
+			
+			<div class="payments">
+				<a class="payment-methods" href="#"> Ver métodos de pago -</a>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+	</div>
+	<div class="widget-last-releases">
+		<span class="last-releases-tittle">PRODUCTOS RELACIONADOS</span>
+		<div class="last-releases">
+			<div class="last-releases release">
+				<div class="background-red">
+					<span class="background-span">NUEVO</span>
+				</div>
+				<img class="last-releases-img" src="../multimedia/star-wars/trooper-1.webp" alt="">
+				<div class="product-info">
+					<h5 class="product-brand">STAR WARS</h5>
+					<h6 class="product-character">STORMTROOPER LIGHTSABER</h6>
+					<span class="product-price">$ 1799,99.-</span>
+					<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+				</div>
+			</div>
+			<div class="last-releases release">
+				<div class="background-red">
+					<span class="background-span">NUEVO</span>
+				</div>
+				<img class="last-releases-img" src="../multimedia/pokemon/pidgeotto-1.webp" alt="">
+				<div class="product-info">
+					<h5 class="product-brand">POKEMON</h5>
+					<h6 class="product-character">PIDGEOTTO</h6>
+					<span class="last-release-price">$ 1799,99.-</span>
+					<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+				</div>
+			</div>
+			<div class="last-releases release">
+				<div class="background-red">
+					<span class="background-span">NUEVO</span>
+				</div>
+				<img class="last-releases-img" src="../multimedia/harry-potter/luna-1.webp" alt="">
+				<div class="product-info">
+					<h5 class="product-brand">HARRY POTTER</h5>
+					<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+					<span class="product-price">$ 1799,99.-</span>
+					<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="">INGRESAR</a></li>
+					<li><a class="footer-item" href="">CONTACTO</a></li>
+				</ul>
+			</div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+			<div class="footer-logo"><img src="../multimedia/branding/isotype.svg" alt=""></div>
+		</div>
+	</footer>
+</body>
+</html>

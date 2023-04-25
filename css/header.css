@@ -63,7 +63,7 @@ html{
 	display:none;
 }
 
-.header-item {
+.header-item, .header-item:hover {
 	text-decoration: none;
 	color: white;
 	border: 0px;
@@ -71,18 +71,6 @@ html{
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: 23px;
-}
-
-.arrow {
-	width: 0.5em;
-	height: 0.5em;
-	display: inline-block;
-	vertical-align: middle;
-	border-left: 0.15em solid currentColor;
-	border-bottom: 0.15em solid currentColor;
-	transform: rotate(-45deg);
-	margin-left: 0.38em;
-	margin-top: -0.25em;
 }
 
 .header-cart-icon {
@@ -116,12 +104,56 @@ html{
 	}
 
 	.logo{
-		width: 150%;
+		max-width: 150%;
 		height: auto;
 	}
 
 	.header-links{
 		display:none;
+	}
+
+	.header-dropdown{
+		display:flex;
+		justify-content: flex-end;
+		align-items: center;
+		grid-area: nav;
+		width:100%;
+		height:max(80px, 15vw);
+	}
+
+	.header-nav{
+		display:none;
+	}
+
+	.dropdown-menu{
+		top: 93px;
+		text-align: right;
+		width: fit-content;
+		left: auto;
+	}
+
+	.dropdown-icon{
+		max-width: 60px;
+	}
+}
+
+@media screen and (max-width: 688px) {
+
+	html{
+		font-size: 45%;
+	}
+
+	.header{
+		height:max(80px, 15vw);
+	}
+
+	.header-container{
+		height:max(80px, 15vw);
+	}
+
+	.header-logo{
+		max-width: 252.40px;
+		height: auto;
 	}
 
 	.header-dropdown{
@@ -140,6 +172,15 @@ html{
 		left: auto;
 	}
 
+	.dropdown-icon{
+		max-width: 45px;
+	}
+
+	.header-nav{
+		display:none;
+	}
+
 }
+
 
 

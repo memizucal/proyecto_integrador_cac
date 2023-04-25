@@ -34,7 +34,7 @@
 		display: flex;
 	}
 
-	.footer-item{
+	.footer-item, .footer-item:hover{
 		text-decoration: none;
 		color:white;
 	}
@@ -50,6 +50,7 @@
 
 	.footer-rights {
 		align-self: flex-end;
+		text-align: center;
 		margin-bottom: 23px;
 		font-family: 'Raleway';
 		font-style: normal;

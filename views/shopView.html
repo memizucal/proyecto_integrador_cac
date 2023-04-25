@@ -25,7 +25,7 @@
 	<header class="header">
 		<div class="header-container">
 			<a href="../index.html" class="header-logo">
-				<img src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+				<img class="logo" src="../multimedia/branding/logo_light_horizontal.svg" alt="">
 			</a>
 			<div class="header-nav">
 				<ul class="header-links">
@@ -34,15 +34,26 @@
 							<span class="caret"></span></button>
 						<ul class="dropdown-menu">
 							<li><a class="header-item" href="shopView.html">Ver todo</a></li>
-							<li><a class="header-item" href="#">Starwars Collection</a></li>
-							<li><a class="header-item" href="#">Pokemon Collection</a></li>
-							<li><a class="header-item" href="#">Harry Potter Collection</a></li>
+							<li><a class="header-item" href="../views/itemViewSW.html">Starwars Collection</a></li>
+							<li><a  class="header-item" href="../views/itemViewPK.html">Pokemon Collection</a></li>
+							<li><a class="header-item" href="../views/itemViewHP.html">Harry Potter Collection</a></li>
 						</ul>
 					</div>
 					<li><a href="" class="header-item">CONTACTO</a></li>
 					<li><a href="" class="header-item">LOGIN</a></li>
-					<li><a href="" class="header-item"><img src="../multimedia/icons/cart-icon.svg" alt=""
-								class="header-cart-icon"></a></li>
+					<li><a href="" class="header-item"><img class="header-cart-icon" src="../multimedia/icons/cart-icon.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<!-- Dropdown menu -->
+			<div class="dropdown header-dropdown">
+				<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="header-item" href="shopView.html">SHOP</a></li>
+					<li><a class="header-item" href="#">CONTACTO</a></li>
+					<li><a class="header-item" href="#">LOGIN</a></li>
+					<li><a class="header-item" href="#">CARRITO</li>
 				</ul>
 			</div>
 		</div>
@@ -57,12 +68,20 @@
 					<option value="">Menor a mayor</option>
 				</select>
 			</span>
-			<span class="options price">PRECIO
+			<span class="options price style-one">PRECIO
 				<div class="price-options">
 					<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
 					<span class="max-price">- MAX <input type="text" placeholder="0" class="input price-input"></span>
 				</div>
 			</span>
+
+			<span class="options price style-two">PRECIO
+				<div class="price-options">
+					<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+					<span class="max-price">MAX <input type="text" placeholder="0" class="input price-input"></span>
+				</div>
+			</span>
+
 			<span class="options filter">FILTRAR
 				<div class="checkbox-options">
 					<div class="label-filter"><input type="checkbox" class="checkbox-filter">NUEVOS</div>
@@ -74,6 +93,45 @@
 
 			</span>
 		</aside>
+		<div class="dropdown sidebar-dropdown">
+			<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+				<img class="dropdown-icon-filter" src="../multimedia/icons/filter-icon.png" alt="">
+			</button>
+			<div class="dropdown-menu sidebar-dropdown-menu">
+				<span class="options search">BUSCAR<input type="search" placeholder="item o categoría"
+					class="input search-input"></span>
+			<span class="options order">ORDENAR POR
+				<select class="input order-input" name="" id="">
+					<option value="">Mayor a menor</option>
+					<option value="">Menor a mayor</option>
+				</select>
+			</span>
+			<span class="options price style-one">PRECIO
+				<div class="price-options">
+					<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+					<span class="max-price">- MAX <input type="text" placeholder="0" class="input price-input"></span>
+				</div>
+			</span>
+
+			<span class="options price style-two">PRECIO
+				<div class="price-options">
+					<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+					<span class="max-price">MAX <input type="text" placeholder="0" class="input price-input"></span>
+				</div>
+			</span>
+
+			<span class="options filter">FILTRAR
+				<div class="checkbox-options">
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">NUEVOS</div>
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">OFERTAS</div>
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">EDICIÓN
+						ESPECIAL</div>
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">FAVORITOS</div>
+				</div>
+
+			</span>
+			</div>
+		</div>
 		<div class="product-grid">
 			<div class="product" style="grid-area:product-1">
 				<img src="../multimedia/star-wars/trooper-1.webp" alt="" class="img-product">
@@ -176,7 +234,7 @@
 			<div class="footer-container">
 				<div class="footer-links">
 					<ul class="links">
-						<li><a class="footer-item" href="./views/shopView.html">SHOP</a></li>
+						<li><a class="footer-item" href="./shopView.html">SHOP</a></li>
 						<li><a class="footer-item" href="">REGISTRARSE</a></li>
 						<li><a class="footer-item" href="">INGRESAR</a></li>
 						<li><a class="footer-item" href="">CONTACTO</a></li>

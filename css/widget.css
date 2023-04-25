@@ -104,3 +104,15 @@
 	}
 
 }
+
+@media screen and (max-width: 688px) {
+
+	html{
+		font-size:35%;
+	}
+
+	.product-info{
+		padding: 10px;
+	}
+
+}

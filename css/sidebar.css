@@ -1,24 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+html {
+	font-size: 62.5%;
+}
+
+.main-shop {
+	display: flex;
+	gap: 15px;
+	padding: max(6.5%, 10px) max(6.5%, 20px);
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	max-width: 245px;
+	font-family: 'Inter';
+	font-style: normal;
+	line-height: 48px;
+	font-weight: 500;
+	font-size: 2.4rem;
+}
+
+.options {
+	padding-bottom: 28px;
+	display: flex;
+	flex-direction: column;
+	font-size: 2.4rem;
+	max-width: 230px;
+	color: #30343F;
+}
+
+.input {
+	height: 44px;
+	width: 243px;
+	border-radius: 6px;
+	border: 2px solid #30343F;
+	font-family: Inter;
+}
+
+.input::placeholder {
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0em;
+	padding-left: 11px;
+	text-align: left;
+	color: #B9B9B9;
+}
+
+
+.search-input {
+	max-width: 100%;
+}
+
+.order-input {
+	max-width: 100%;
+	font-family: 'Inter';
+	font-size: 2rem;
+	color: #B9B9B9;
+}
+
+.price-options {
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.price-input {
+	height: 27px;
+	width: 59px;
+	margin-left: 10px;
+}
+
+.price-input::placeholder {
+	padding: 0;
+	text-align: center;
+}
+
+.checkbox-options {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.8rem;
+	align-items: flex-start;
+}
+
+.checkbox-filter {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border: 2px solid #30343F;
+	border-radius: 6px;
+	margin: 5px 10px !important;
+
+}
+
+.label-filter {
+	display: flex;
+	justify-content: center;
+	line-height: 34px;
+	color: #30343F;
+}
+
+.style-two {
+	display: none
+}
+
+.sidebar-dropdown {
+	display:none;
+}
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html {
+		font-size: 50%;
 	}
 
-	html{
-		font-size: 62.5%;
-	}
-
-	.main-shop {	
+	.main-shop {
 		display: flex;
 		gap: 15px;
-		padding: max(6.5%, 10px) max(7.5%, 20px);
+		padding: max(4.5%, 10px) max(5.5%, 20px);
 	}
 
 	.sidebar {
 		display: flex;
 		flex-direction: column;
-		max-width: 245px;
+		max-width: 230px;
 		font-family: 'Inter';
 		font-style: normal;
 		line-height: 48px;
@@ -30,89 +143,103 @@
 		padding-bottom: 28px;
 		display: flex;
 		flex-direction: column;
-		font-size: 2.4rem;
-		max-width: 230px;
-	}
-
-	.input {
-		height: 44px;
-		width: 243px;
-		border-radius: 6px;
-		border: 2px solid #30343F;
-		font-family: Inter;
-	}
-
-	.input::placeholder {
 		font-size: 2rem;
-		font-weight: 500;
-		line-height: 24px;
-		letter-spacing: 0em;
-		padding-left: 11px;
-		text-align: left;
-		color: #B9B9B9;
+		max-width: 150px;
 	}
 
-	.search-input{
-		max-width: 230px;
+	.search-input {
+		max-width: 150px;
+
 	}
 
 	.order-input {
-		max-width: 100%;
+		max-width: 150px;
 		font-family: 'Inter';
 		font-size: 2rem;
 		color: #B9B9B9;
-		padding-left: 11px;
 	}
 
-	.price-options {
-		font-size: 1.6rem;
-		font-weight: 500;
-		line-height: 19px;
-		letter-spacing: 0em;
-		text-align: left;
-	}
-
-	.price-input {
-		height: 27px;
-		width: 59px;
-		margin-left: 10px;
-	}
-
-	.price-input::placeholder {
-		padding: 0;
-		text-align: center;
-	}
-
-	.checkbox-options {
-		display: flex;
-		flex-direction: column;
-		font-size: 1.8rem;
-		align-items: flex-start;
-	}
-
-	.checkbox-filter {
-		appearance: none;
-		width: 24px;
-		height: 24px;
-		border: 2px solid #30343F;
-		border-radius: 6px;
-		margin: 5px 10px!important;
-
+	.input,
+	.input::placeholder {
+		font-size: 1.7rem;
 	}
 
 	.label-filter {
+		font-size: 1.3rem;
+	}
+
+	.price-input {
+		max-width: 50px;
+	}
+
+	.style-one {
+		display: none
+	}
+
+	.price-options {
 		display: flex;
-		justify-content: center;
-		line-height: 34px;
-		color: #30343F;
+		flex-direction: column;
+		row-gap: 3px;
 	}
 
-
-
-@media screen and (max-width: 993px) and (min-width: 689px) {
-
-	html{
-		font-size: 50%;
+	.min-price .price-input {
+		margin-left: 15px;
 	}
 
+	.sidebar-dropdown {
+		display:none;
+	}
+
+}
+
+@media screen and (max-width: 688px) {
+
+	html {
+		font-size: 35%;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.sidebar-dropdown {
+		display:flex;
+	}
+
+	.sidebar-dropdown-menu{
+		position: absolute;
+		top: 44px;
+		text-align: left;
+		width: fit-content;
+		left:auto;
+		width: 344px;
+		min-width: 290px;
+	}
+
+	.options{
+		padding:10px;
+		max-width: 270px;
+	}
+
+	.input{
+		margin:10px;
+	}
+
+	.dropdown-toggle{
+		background-color: transparent!important;
+	}
+
+	.dropdown-icon-filter{
+		color:white;
+		background-color: transparent;
+		max-width: 45px;	
+	}
+
+	.main-shop {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: max(2.5%, 10px) max(2.5%, 10px);
+		max-width: 687px;		
+	}
 }
