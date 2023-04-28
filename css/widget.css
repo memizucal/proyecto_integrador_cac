@@ -129,14 +129,13 @@
 	
 	.release{
 		width: 100%;
-		height: auto;
-		
+		height: auto;		
 	}
 	
 	.last-releases-img{
-		max-width:100%;
+		max-width:80%;
 		height: auto;		
-		align-self: flex-start;
+		align-self: center;
 	}
 
 	.product-info{
