@@ -157,11 +157,14 @@
 	.item{
 		display: flex;
 		flex-direction: column;
-		padding: max(2.5%, 20px) max(6.5%, 20px) max(5.5%, 20px) ;
+		padding: max(7.5%, 20px) max(6.5%, 20px) max(5.5%, 20px) ;
+		width: 100%;
 	}
 
 	.sw-img{
+		display: flex;
 		max-width: 80%;
+		justify-self: center;
 	}
 
 	.item .product-info{

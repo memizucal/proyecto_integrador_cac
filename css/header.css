@@ -71,6 +71,7 @@ html{
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: 23px;
+	display: grid;
 }
 
 .header-cart-icon {

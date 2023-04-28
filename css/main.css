@@ -264,6 +264,11 @@
 	.main-character{
 		padding: 0 max(1.5%, 20px);
 	}
+
+	.main-collection-button{
+		align-self: center;
+		margin:0;
+	}
 }
 
 @media screen and (max-width: 510px) {
@@ -314,11 +319,12 @@
 	}
 
 	.main-container{
-	justify-items: center;
+		justify-items: center;
+		padding: 12px 0;
 	}
 		
 	.main-products {
-		padding: 0 max(5.5%, 10px);
+		padding: 0 max(5.5%, 10px) max(5.5%, 10px);
 	}
 
 	.main-character{
@@ -348,6 +354,8 @@
 		max-width: 220px;
 		height: auto;
 		padding: 20px;
+		margin:0;
+		align-self: center;
 	}
 	
 }
