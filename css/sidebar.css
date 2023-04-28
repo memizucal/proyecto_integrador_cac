@@ -208,12 +208,13 @@ html {
 
 	.sidebar-dropdown-menu{
 		position: absolute;
-		top: 44px;
+		top: 85%;
 		text-align: left;
+		left:0;
 		width: fit-content;
-		left:auto;
-		width: 344px;
-		min-width: 290px;
+		min-width: 200px;
+		height: fit-content;
+		padding:5px;
 	}
 
 	.options{

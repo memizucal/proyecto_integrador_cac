@@ -101,10 +101,11 @@ html{
 
 	.header-container{
 		height:max(80px, 15vw);
+		gap:0;
 	}
 
 	.logo{
-		max-width: 150%;
+		max-width: 100%;
 		height: auto;
 	}
 
@@ -126,10 +127,16 @@ html{
 	}
 
 	.dropdown-menu{
-		top: 93px;
+		position: absolute;
+		top: 70%;
 		text-align: right;
-		width: fit-content;
+		width: 200px;
+		height: 200px;
 		left: auto;
+	}
+
+	.dropdown-menu .header-item{
+		font-size: 3rem;
 	}
 
 	.dropdown-icon{
@@ -137,7 +144,7 @@ html{
 	}
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 688px) and (min-width:510px) {
 
 	html{
 		font-size: 45%;
@@ -149,11 +156,14 @@ html{
 
 	.header-container{
 		height:max(80px, 15vw);
+		gap: 0;
+		justify-items: end;
 	}
 
 	.header-logo{
-		max-width: 252.40px;
+		max-width: 100%;
 		height: auto;
+		justify-self: flex-start;
 	}
 
 	.header-dropdown{
@@ -161,15 +171,21 @@ html{
 		justify-content: flex-end;
 		align-items: center;
 		grid-area: nav;
-		width:100%;
+		width:fit-content;
 		height:max(80px, 15vw);
 	}
 
 	.dropdown-menu{
-		top: 93px;
+		top: 70%;
 		text-align: right;
-		width: fit-content;
+		width: 130px;
+		height: 130px;
 		left: auto;
+		right: 10%;
+	}
+
+	.dropdown-menu .header-item{
+		font-size: 2.3rem;
 	}
 
 	.dropdown-icon{
@@ -180,6 +196,69 @@ html{
 		display:none;
 	}
 
+}
+
+@media screen and (max-width: 510px) {
+
+	html{
+		font-size: 45%;
+	}
+
+	.header{
+		height:max(80px, 15vw);
+	}
+
+	.header-container{
+		height:max(80px, 15vw);
+		grid-template-columns: 80% 20%;
+		gap: 0;
+		justify-items: end;
+	}
+
+	.header-logo{
+		max-width: 252.40px;
+		height: auto;
+		justify-self: flex-start;
+	}
+
+	.header-dropdown{
+		display:flex;
+		align-items: center;
+		grid-area: nav;
+		width:fit-content;
+		height:max(80px, 15vw);
+	}
+
+	.dropdown-toggle{
+		width: fit-content;
+		height: auto;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.dropdown-menu{
+		top: 70%;
+		text-align: right;
+		width: 110px;
+		height: 110px;
+		left: auto;
+		right: 10%;
+		min-width: 110px!important;
+	}
+
+	.dropdown-menu .header-item{
+		font-size: 2rem;
+	}
+
+
+	.dropdown-icon{
+		max-width: 30px;
+		height: auto;
+	}
+
+	.header-nav{
+		display:none;
+	}	
 }
 
 
