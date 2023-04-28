@@ -113,7 +113,7 @@
 
 	
 	.widget-last-releases{
-		padding: max(5.5%, 20px) max(5.5%, 20px);
+		padding: 0 max(5.5%, 20px) max(5.5%, 20px);
 	}
 	
 	.last-releases-tittle{

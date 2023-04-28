@@ -173,7 +173,7 @@
 @media screen and (max-width: 993px) and (min-width: 689px) {
 
 	html{
-		font-size: 50%;
+		font-size: 57%;
 	}
 
 	.main-banner{
@@ -196,6 +196,38 @@
 	.main-link-shop{
 		max-width: 211px;
 		height: auto;
+	}
+
+	.main-products{
+		padding: max(5.5%, 20px) max(7.5%, 20px);
+	}
+
+	.main-container{
+		grid-template-rows: 450px;		
+	}
+
+	.main-character{
+		width: 100%;
+	}
+
+	.main-character .main-h4{
+		font-size: 4rem;
+		line-height: 40px;
+	}
+
+	.main-character .main-h6{
+		font-size: 2.4rem;
+		line-height: 20px;
+	}
+	
+	.item-img{
+		max-width: 100%;
+	}
+
+	.main-collection-button{
+		margin:0;
+		max-width: 291px;
+		
 	}
 }
 
