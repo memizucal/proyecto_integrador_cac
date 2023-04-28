@@ -157,7 +157,6 @@
 		text-decoration: none;
 	}
 
-
 	.main-image {
 		grid-area: image;
 		display: flex;
@@ -182,19 +181,25 @@
 	}
 
 	.main-content{
-		height: max(135px, 40vw);;
+		height: max(135px, 40vw);
+	}
+
+	.main-content .main-h4{
+		font-size: 3.8rem;
 	}
 
 	.main-content .main-h6{
+		font-size: 2.4rem;
 		color:white;
+	}
+
+	.main-link-shop{
+		max-width: 211px;
+		height: auto;
 	}
 }
 
-@media screen and (max-width: 688px)and (min-width:511px){
-
-	html{
-		font-size: 35%;
-	}
+@media screen and (max-width: 688px)and (min-width:510px){
 
 	.main-banner{
 		height: max(145px, 40vw);
@@ -236,7 +241,7 @@
 	}
 
 	.main-banner{
-		height: max(135px, 45vw);
+		height: max(250px, 45vw);
 		width: 100%;
 		display: flex;
 		justify-content: center;
