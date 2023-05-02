@@ -41,7 +41,7 @@
 	.footer-item, .footer-item:hover{
 		text-decoration: none;
 		color:white;
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 
 	.links {
@@ -68,7 +68,7 @@
 		font-family: 'Raleway';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 2rem;
+		font-size: 2.2rem;
 		line-height: 23px;
 		padding: max(3.5%, 20px) 0;
 	}
@@ -94,6 +94,7 @@
 	.footer-item, .footer-item:hover{
 		text-decoration: none;
 		color:white;
+		font-size: 2.1rem;
 
 	}
 }
@@ -105,7 +106,7 @@
 	}
 
 	.footer{
-		height: max(135px, 60.5vw);
+		height: max(135px, 69.5vw);
 	}
 
 	.footer-container-small{
@@ -113,7 +114,7 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;	
-		height: max(135px, 60vw);
+		height: max(135px, 69vw);
 		padding: max(0.4%, 15px)
 	}
 
@@ -128,6 +129,8 @@
 	
 	.footer-rights{
 		align-self: center;
+		font-size: 2.5rem;
+		padding: max(2.5%, 5px)
 	}
 	
 	.footer-logo{
@@ -139,6 +142,10 @@
 	.footer-img{
 		max-width: 60%;
 		height: auto;
+	}
+
+	.footer-item{
+		font-size: max(2.5rem, 20px);
 	}
 
 }
@@ -165,6 +172,10 @@
 		display: none;
 	}
 
+	.footer-item{
+		font-size: max(2rem, 20px);
+	}
+
 	.footer-logo{
 	 max-width: 50%;
 	 justify-content: center;
@@ -177,6 +188,7 @@
 	.footer-rights{
 		align-self: center;
 		font-size: max(2rem, 20px);
+		max-width: 339px;
 	}
 
 	

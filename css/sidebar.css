@@ -204,17 +204,22 @@ html {
 
 	.sidebar-dropdown {
 		display:flex;
+		position: absolute;
 	}
 
 	.sidebar-dropdown-menu{
-		position: absolute;
-		top: 85%;
+		position: relative;
+		top: 45px;
 		text-align: left;
-		left:0;
-		width: fit-content;
+		left: 5px;
 		min-width: 200px;
 		height: fit-content;
-		padding:5px;
+		padding: 5px;
+		flex-direction: column;
+		border: 2px solid black;
+		border-radius: 3px;
+		background-color: white;
+		z-index: 1;
 	}
 
 	.options{
@@ -226,14 +231,17 @@ html {
 		margin:10px;
 	}
 
-	.dropdown-toggle{
-		background-color: transparent!important;
+	.sidebar-dropdown-button{
+		border:none;
+		background-color: white;
+		position: absolute;
+		height: fit-content;
 	}
-
 	.dropdown-icon-filter{
 		color:white;
-		background-color: transparent;
+		/* background-color: transparent; */
 		max-width: 45px;	
+		border:none;
 	}
 
 	.main-shop {
