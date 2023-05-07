@@ -9,12 +9,12 @@ let isClicked = true;
 
 
 function click(openMenu) {
-	if (isClickedSidebar == true) {
+	if (isClicked == true) {
 		openMenu.style.display = "flex";
-		isClickedSidebar = false;
+		isClicked = false;
 	} else {
 		openMenu.style.display = "none";
-		isClickedSidebar = true;
+		isClicked = true;
 	}
 }
 
@@ -38,13 +38,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	}, 5000)
 });
 
-let sidebarDropdownButton = document.querySelector(".sidebar-dropdown-button");
-let sidebarDropdownMenu = document.querySelector(".sidebar-dropdown-menu");
-let isClickedSidebar = true;
 
-sidebarDropdownButton.addEventListener('click', () => {
-	click(sidebarDropdownMenu)
-});
+
+
 
 
 // let pages = document.querySelectorAll(".page-element");
@@ -52,8 +48,17 @@ sidebarDropdownButton.addEventListener('click', () => {
 
 
 
-
-
+// function sumar(){
+//     let num = document.getElementById('num').value;
+    
+//     if(num == ''){
+//         num ="0";
+        
+//     }
+    
+//     let sumar = parseInt(num) +1;
+//     document.getElementById('num').value = sumar;
+// }
 
 
 
