@@ -47,6 +47,10 @@
 		grid-area: pages;
 	}
 
+	.pages:hover, .pages:focus{
+		text-decoration: none;
+	}
+
 	.pagination-list{
 		display: flex;			
 		text-decoration: none;	
@@ -82,9 +86,11 @@
 		color:#212B36;		
 	}
 		
-	.page-element:focus{
+	
+	.page-element:focus, .page-element:active{
 		color:#FF3333;
 		border: 1px solid #FF3333;
+		background-color: #FF3333;
 	}
 	
 

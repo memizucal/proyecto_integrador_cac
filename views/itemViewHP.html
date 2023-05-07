@@ -8,15 +8,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/sidebar.css">
 	<link rel="stylesheet" href="../css/product.css">
 	<link rel="stylesheet" href="../css/widget.css">
 	<link rel="stylesheet" href="../css/footer.css">
 	<link rel="stylesheet" href="../css/item.css">
+	<link rel="stylesheet" href="../css/main.css">
 	<title>Funko Shop - PRODUCTO</title>
 </head>
 <body>
@@ -80,6 +78,7 @@
 	</header>
 
 	<div class="item">
+		<div class="whatsapp-div" id="whatsapp-div" style="display: none;"><a href="https://wa.me/" target="_blank" class="whatsapp-link"><img src="../multimedia/icons/whatsapp-icon.png" alt="" class="whatsapp-icon"></a></div>
 		<img class="sw-img" src="../multimedia/harry-potter/hermione-1.webp" alt="">
 		<div class="product-info">
 			<h5 class="product-brand">HARRY POTTER</h5>
@@ -88,13 +87,12 @@
 			<span class="product-price">$ 1799,99.-</span>
 			<div class="item-purchase">
 				<div class="item-number-selector"> 
-					<div class="minus">-</div>
-					<div class="number">0</div>
-					<div class="plus">+</div>
+					<div class="minus"><input type="button" class="input-minus" value="-"></div>
+					<div class="number"><input type="text" class="input-number" placeholder="0"></div>
+					<div class="plus"><input type="button" class="input-plus" value="+"> </div>
 				</div>
-				<span class="cart"> Agregar al carrito </span>
+				<div class="cart"> <input type="button" class="button-cart" value="Agregar al carrito "></div>
 			</div>
-			
 			<div class="payments">
 				<a class="payment-methods" href="#"> Ver métodos de pago -</a>
 				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>

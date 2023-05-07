@@ -169,6 +169,26 @@
 		height: auto;
 	}
 
+	.whatsapp-div{		
+		margin-right: 25px;
+		margin-bottom: 10px;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		padding: 10px;
+		z-index: 1;
+	}
+	
+	.whatsapp-link{
+		display:block;
+		max-width:80px;
+	}
+	
+	.whatsapp-icon{
+		max-width: 80px;
+	}
+	
+
 
 @media screen and (max-width: 993px) and (min-width: 689px) {
 

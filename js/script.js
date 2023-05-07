@@ -7,49 +7,53 @@ const menuItems2 = document.querySelector(".dropdown-menu");
 const menuItemsSmall = document.querySelector(".dropdown-menu-shop-small");
 let isClicked = true;
 
-shopMenuButton.addEventListener('click', () =>{
 
-	if(isClicked == true){
-		menuItems.style.display = "flex";
-		isClicked = false;
-	}else{
-		menuItems.style.display = "none";
-		isClicked = true;
-	}
-})
-
-menuButton.addEventListener('click', ()=>{
-	if(isClicked == true){
-		menuItems2.style.display = "flex";
-		isClicked = false;
-	}else{
-		menuItems2.style.display = "none";
-		isClicked = true;
-	}
-})
-
-shopMenuButtonSmall.addEventListener('click', ()=>{
-	if(isClicked == true){
-		menuItemsSmall.style.display = "flex";
-		isClicked = false;
-	}else{
-		menuItemsSmall.style.display = "none";
-		isClicked = true;
-	}
-})
-
-const sidebarDropdownButton = document.querySelector(".sidebar-dropdown-button");
-const sidebarDropdownMenu = document.querySelector(".sidebar-dropdown-menu");
-let isClickedSidebar = true;
-
-sidebarDropdownButton.addEventListener('click', ()=>{
-	if(isClickedSidebar == true){
-		sidebarDropdownMenu.style.display = "flex";
+function click(openMenu) {
+	if (isClickedSidebar == true) {
+		openMenu.style.display = "flex";
 		isClickedSidebar = false;
-	}else{
-		sidebarDropdownMenu.style.display = "none";
+	} else {
+		openMenu.style.display = "none";
 		isClickedSidebar = true;
 	}
+}
+
+shopMenuButton.addEventListener('click', () => {
+	click(menuItems);
 })
+
+menuButton.addEventListener('click', () => {
+	click(menuItems2);
+})
+
+shopMenuButtonSmall.addEventListener('click', () => {
+	click(menuItemsSmall);
+})
+
+document.addEventListener('DOMContentLoaded', ()=>{
+	setTimeout(()=>{
+		const whatsappIcon = document.getElementById("whatsapp-div");
+		whatsappIcon.style.display = "flex";
+		console.log("hola")
+	}, 5000)
+});
+
+let sidebarDropdownButton = document.querySelector(".sidebar-dropdown-button");
+let sidebarDropdownMenu = document.querySelector(".sidebar-dropdown-menu");
+let isClickedSidebar = true;
+
+sidebarDropdownButton.addEventListener('click', () => {
+	click(sidebarDropdownMenu)
+});
+
+
+// let pages = document.querySelectorAll(".page-element");
+// let isActive = true;
+
+
+
+
+
+
 
 
