@@ -31,3 +31,11 @@ function restar(){
         document.getElementById('num').value = restar;
     }
 }
+
+// let num = document.querySelector("#num");
+
+// num.value.addEventListener('change', ()=>{
+// 	if(num.value > 9){
+// 		num.style
+// 	}
+// })

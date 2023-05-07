@@ -40,6 +40,10 @@ html {
 	border-radius: 6px;
 	border: 2px solid #30343F;
 	font-family: Inter;
+	text-overflow: ellipsis;
+	text-align: left;
+	padding:10px;
+	color:#333333;
 }
 
 .input::placeholder {
@@ -47,11 +51,10 @@ html {
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: 0em;
-	padding-left: 11px;
+	padding-left: 0;
 	text-align: left;
 	color: #B9B9B9;
 }
-
 
 .search-input {
 	max-width: 100%;
@@ -62,6 +65,7 @@ html {
 	font-family: 'Inter';
 	font-size: 2rem;
 	color: #B9B9B9;
+	padding: 10px;
 }
 
 .price-options {
@@ -78,8 +82,12 @@ html {
 	margin-left: 10px;
 }
 
-.price-input::placeholder {
-	padding: 0;
+input[type=text]{
+	text-align: center;
+	color:#333333;
+}
+
+.price-input::placeholder {	
 	text-align: center;
 }
 
@@ -166,6 +174,8 @@ input[type="checkbox"]:checked{
 		font-family: 'Inter';
 		font-size: 2rem;
 		color: #B9B9B9;
+		text-align: center;
+		padding: 10px;
 	}
 
 	.input,

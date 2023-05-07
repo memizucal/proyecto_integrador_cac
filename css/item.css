@@ -118,6 +118,11 @@
 		text-align: center;
 	}
 
+	input[type=text]{
+		text-align: center;
+		color:#333333;
+	}
+
 	.cart, .button-cart {
 		margin-left: 20.87px;
 		background-color: #FF3333;
