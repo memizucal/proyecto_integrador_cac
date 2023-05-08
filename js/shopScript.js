@@ -1,14 +1,14 @@
 let sidebarDropdownButton = document.querySelector(".sidebar-dropdown-button");
 let sidebarDropdownMenu = document.querySelector(".sidebar-dropdown-menu");
-let isClicked = true;
+let isClickedSidebar = true;
 
 function click(openMenu) {
-	if (isClicked == true) {
+	if (isClickedSidebar == true) {
 		openMenu.style.display = "flex";
-		isClicked = false;
+		isClickedSidebar = false;
 	} else {
 		openMenu.style.display = "none";
-		isClicked = true;
+		isClickedSidebar = true;
 	}
 }
 
