@@ -44,6 +44,8 @@
 		font-weight: 700;
 		line-height: 45px;
 		color:white;
+		padding-bottom: 15px;
+		margin: 0;
 
 	}
 
@@ -53,6 +55,8 @@
 		line-height: 21px;
 		margin-top: 7px;
 		color:white;
+		padding-bottom: 15px;
+		margin: 0;		
 	}
 
 	.main-link-shop, .main-link-shop:hover {
@@ -206,6 +210,7 @@
 
 	.main-content .main-h4{
 		font-size: 3.8rem;
+		
 	}
 
 	.main-content .main-h6{
@@ -275,6 +280,7 @@
 
 	.main-content .main-h6{
 		color:white;
+		font-size: 2.5rem;
 	}
 	
 	.main-products {
@@ -288,6 +294,19 @@
 	.main-collection-button{
 		align-self: center;
 		margin:0;
+	}
+
+	.main-link-shop{
+		font-size: 2.3rem;
+		max-width: 70%;
+	}
+
+	.main-h4{
+		font-size: 3.8rem;
+		line-height: 28px;
+	}
+	.main-h6{
+		font-size: 2.6rem;
 	}
 }
 
@@ -314,7 +333,8 @@
 	}
 
 	.main-link-shop{
-		max-width: 70%;
+		max-width: 50%;
+		font-size: 2.3rem;
 	}
 
 	.main-content .main-h4{
@@ -322,6 +342,7 @@
 		margin: 0;
 	}
 	.main-content .main-h6{
+		font-size: 2.3rem;
 		color:white;
 		margin: 0;
 	}

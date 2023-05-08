@@ -178,7 +178,7 @@ html {
 		font-size: 2.3rem;
 		padding: 10px;
 		color: white;
-	}
+	}	
 
 	.dropdown-button {
 		background-color: #30343F;
@@ -212,17 +212,17 @@ html {
 		left: 0;
 		list-style: none;	
 		background-color: #30343F;
-		opacity: 0.9;
+		opacity: 1;
 		width: 100%;
 		flex-direction: column;
 		align-items: center;	
-		z-index: 1;
+		z-index: 1;	
 	}
 	
 	.dropdown-menu-shop-small .header-item {
 		font-size: 2rem;
 		padding: 10px;
-		color: white;
+		color: #FF3333;
 	}
 	
 }
@@ -286,7 +286,7 @@ html {
 	}
 
 	.dropdown-icon {
-		max-width: 45pxpx;
+		max-width: 45px;
 		background-color: #30343F;
 		border: none;
 	}
@@ -312,7 +312,7 @@ html {
 		left: 0;
 		list-style: none;	
 		background-color: #30343F;
-		opacity: 0.9;
+		opacity: 1;		
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
@@ -322,7 +322,7 @@ html {
 	.dropdown-menu-shop-small .header-item {
 		font-size: 2rem;
 		padding: 10px;
-		color: white;
+		color: #FF3333;
 	}
 
 	.header-nav{
@@ -370,7 +370,7 @@ html {
 		list-style: none;
 		border: 1px black solid;
 		background-color: #30343F;
-		opacity: 0.9;
+		opacity: 1;
 		width: 100vw;
 		flex-direction: column;
 		align-items: center;
@@ -379,7 +379,7 @@ html {
 	}
 
 	.dropdown-menu .header-item {
-		font-size: 2rem;
+		font-size: 2.3rem;
 		padding: 10px;
 		color: white;
 	}
@@ -416,7 +416,7 @@ html {
 		left: 0;
 		list-style: none;	
 		background-color: #30343F;
-		opacity: 0.9;
+		opacity: 1;	
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
@@ -426,8 +426,9 @@ html {
 	.dropdown-menu-shop-small .header-item {
 		font-size: 2.3rem;
 		padding: 10px;
-		color: white;
+		color: #FF3333
 	}
+
 
 	.header-nav{
 		display:none;
