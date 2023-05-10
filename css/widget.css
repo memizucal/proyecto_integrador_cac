@@ -105,6 +105,73 @@
 		padding: 5px 35px;
 	}
 
+	.carrousel{
+		width: 100%;
+		height: auto;
+		background-color: lightblue;	
+		padding: 0 max(7.5%, 20px) 68px;
+		position: relative;
+		overflow: hidden;		
+		display: flex;	
+		flex-flow:column nowrap;
+		
+	}
+
+	.contenedorGrande{
+		width: 200%;
+		height: 100%;
+		background-color: antiquewhite;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		transition: all .5s ease;	
+		overflow: hidden;	
+		
+	}
+	
+	.itemCarrousel{
+		width: calc(100%/2.5);
+		background-color: aqua;
+		margin: 5px;
+	}
+
+	.puntos{
+		width: 100%;
+		list-style: none;		
+		padding: 1em;		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px
+	}
+
+	/* flecha izquierda */
+	.punto1{
+		width: 1em;
+		height: 1em;
+		background-color: rgb(140, 9, 176);
+		border-radius: 50px;		
+			
+	}
+
+	/* flecha derecha */
+	.punto2{
+		width: 1em;
+		height: 1em;
+		background-color: rgb(140, 9, 176);
+		border-radius: 50px;
+		position: relative;	
+		left: 50px;	
+
+			
+			
+	}
+
+	.punto.activo{
+		background-color: orange;
+	}
+
 
 @media screen and (max-width: 993px) and (min-width: 689px) {
 
