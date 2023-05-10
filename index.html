@@ -17,11 +17,11 @@
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/widget.css">
-	<link rel="stylesheet" href="./css/footer.css">	
+	<link rel="stylesheet" href="./css/footer.css">
 	<title>Funko Shop - HOME</title>
 </head>
 
-<body>	
+<body>
 	<header class="header">
 		<div class="header-container">
 			<a href="index.html" class="header-logo">
@@ -31,14 +31,17 @@
 			<div class="header-nav">
 				<ul class="header-links">
 					<li class="links">
-						<button class="shop-dropdown-button" >SHOP
+						<button class="shop-dropdown-button">SHOP
 							<span class="caret"></span></button>
 						<div class="shop-dropdown-container">
 							<ul class="dropdown-menu-shop" style="display:none">
-								<li class="sublink"><a class="header-item" href="./views/shopView.html">Ver todo</a></li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewSW.html">Starwars Collection</a>
+								<li class="sublink"><a class="header-item" href="./views/shopView.html">Ver todo</a>
 								</li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewPK.html">Pokemon Collection</a>
+								<li class="sublink"><a class="header-item" href="./views/itemViewSW.html">Starwars
+										Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./views/itemViewPK.html">Pokemon
+										Collection</a>
 								</li>
 								<li class="sublink"><a class="header-item" href="./views/itemViewHP.html">Harry Potter
 										Collection</a>
@@ -60,28 +63,32 @@
 				<ul class="dropdown-menu" style="display:none">
 					<button class="shop-dropdown-button-small">SHOP
 						<span class="caret"></span></button>
-						<div class="shop-dropdown-container">
-							<ul class="dropdown-menu-shop-small" style="display:none">
-								<li class="sublink"><a class="header-item" href="./views/shopView.html">Ver todo</a></li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewSW.html">Starwars Collection</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewPK.html">Pokemon Collection</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewHP.html">Harry Potter
-										Collection</a>
-								</li>
-							</ul>
-						</div>
+					<div class="shop-dropdown-container">
+						<ul class="dropdown-menu-shop-small" style="display:none">
+							<li class="sublink"><a class="header-item" href="./views/shopView.html">Ver todo</a></li>
+							<li class="sublink"><a class="header-item" href="./views/itemViewSW.html">Starwars
+									Collection</a>
+							</li>
+							<li class="sublink"><a class="header-item" href="./views/itemViewPK.html">Pokemon
+									Collection</a>
+							</li>
+							<li class="sublink"><a class="header-item" href="./views/itemViewHP.html">Harry Potter
+									Collection</a>
+							</li>
+						</ul>
+					</div>
 					</button>
 					<li class="sublink"><a class="header-item" href="#">CONTACTO</a></li>
 					<li class="sublink"><a class="header-item" href="#">LOGIN</a></li>
 					<li class="sublink"><a class="header-item" href="#">CARRITO</li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</header>
 	<main class="main">
-		<div class="whatsapp-div" id="whatsapp-div" style="display: none;"><a href="https://wa.me/" target="_blank" class="whatsapp-link"><img src="./multimedia/icons/whatsapp-icon.png" alt="" class="whatsapp-icon"></a></div>
+		<div class="whatsapp-div" id="whatsapp-div" style="display: none;"><a href="https://wa.me/" target="_blank"
+				class="whatsapp-link"><img src="./multimedia/icons/whatsapp-icon.png" alt="" class="whatsapp-icon"></a>
+		</div>
 		<div class="main-banner">
 			<div class="main-content">
 				<h4 class="main-h4">Nuevos Ingresos</h4>
@@ -124,10 +131,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="widget-last-releases">
+	</main>
+	<div class="carrouselContenedor">
+		<div class="carrousel">
 			<span class="last-releases-tittle">ÚLTIMOS LANZAMIENTOS</span>
-			<div class="last-releases">
-				<div class="release">
+			<ul class="puntos">
+				<li class="punto punto1"></li>
+				<li class="punto punto2"></li>
+			</ul>
+
+			<div class="contenedorGrande">
+				<div class="itemCarrousel">
 					<div class="background-red">
 						<span class="background-span">NUEVO</span>
 					</div>
@@ -139,7 +153,7 @@
 						<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
 					</div>
 				</div>
-				<div class="release">
+				<div class="itemCarrousel">
 					<div class="background-red">
 						<span class="background-span">NUEVO</span>
 					</div>
@@ -151,7 +165,43 @@
 						<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
 					</div>
 				</div>
-				<div class="release">
+				<div class="itemCarrousel">
+					<div class="background-red">
+						<span class="background-span">NUEVO</span>
+					</div>
+					<img class="last-releases-img" src="./multimedia/harry-potter/luna-1.webp" alt="">
+					<div class="product-info">
+						<h5 class="product-brand">HARRY POTTER</h5>
+						<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+						<span class="product-price">$ 1799,99.-</span>
+						<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+					</div>
+				</div>
+				<div class="itemCarrousel">
+					<div class="background-red">
+						<span class="background-span">NUEVO</span>
+					</div>
+					<img class="last-releases-img" src="./multimedia/harry-potter/luna-1.webp" alt="">
+					<div class="product-info">
+						<h5 class="product-brand">HARRY POTTER</h5>
+						<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+						<span class="product-price">$ 1799,99.-</span>
+						<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+					</div>
+				</div>
+				<div class="itemCarrousel">
+					<div class="background-red">
+						<span class="background-span">NUEVO</span>
+					</div>
+					<img class="last-releases-img" src="./multimedia/harry-potter/luna-1.webp" alt="">
+					<div class="product-info">
+						<h5 class="product-brand">HARRY POTTER</h5>
+						<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+						<span class="product-price">$ 1799,99.-</span>
+						<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+					</div>
+				</div>
+				<div class="itemCarrousel">
 					<div class="background-red">
 						<span class="background-span">NUEVO</span>
 					</div>
@@ -165,7 +215,7 @@
 				</div>
 			</div>
 		</div>
-	</main>
+	</div>
 	<footer class="footer">
 		<div class="footer-container-small">
 			<div class="footer-links">
@@ -194,6 +244,7 @@
 		</div>
 	</footer>
 	<script defer src="./js/indexScript.js"></script>
+	<script src="./js/carrouselScript.js"></script>
 </body>
 
 </html>
