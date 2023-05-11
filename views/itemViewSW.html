@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
 	<link rel="shortcut icon" href="../multimedia/icons/icono.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">	
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/sidebar.css">
 	<link rel="stylesheet" href="../css/product.css">
@@ -15,8 +18,10 @@
 	<link rel="stylesheet" href="../css/footer.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/item.css">
+	<link rel="stylesheet" href="../css/mediosDePago.css">
 	<title>Funko Shop - PRODUCTO</title>
 </head>
+
 <body>
 	<header class="header">
 		<div class="header-container">
@@ -32,9 +37,11 @@
 						<div class="shop-dropdown-container">
 							<ul class="dropdown-menu-shop" style="display:none">
 								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
-								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars
+										Collection</a>
 								</li>
-								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon
+										Collection</a>
 								</li>
 								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
 										Collection</a>
@@ -56,18 +63,18 @@
 				<ul class="dropdown-menu" style="display:none">
 					<button class="shop-dropdown-button-small">SHOP
 						<span class="caret"></span></button>
-						<div class="shop-dropdown-container">
-							<ul class="dropdown-menu-shop-small" style="display:none">
-								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
-								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
-										Collection</a>
-								</li>
-							</ul>
-						</div>
+					<div class="shop-dropdown-container">
+						<ul class="dropdown-menu-shop-small" style="display:none">
+							<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+							<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+							</li>
+							<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+							</li>
+							<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+									Collection</a>
+							</li>
+						</ul>
+					</div>
 					</button>
 					<li class="sublink"><a class="header-item" href="#">CONTACTO</a></li>
 					<li class="sublink"><a class="header-item" href="#">LOGIN</a></li>
@@ -77,37 +84,105 @@
 		</div>
 	</header>
 
-	<div class="whatsapp-div" id="whatsapp-div" style="display: none;"><a href="https://wa.me/" target="_blank" class="whatsapp-link"><img src="../multimedia/icons/whatsapp-icon.png" alt="" class="whatsapp-icon"></a></div>
+	<div class="whatsapp-div" id="whatsapp-div" style="display: none;"><a href="https://wa.me/" target="_blank"
+			class="whatsapp-link"><img src="../multimedia/icons/whatsapp-icon.png" alt="" class="whatsapp-icon"></a>
+	</div>
 	<div class="item">
 		<img class="sw-img" src="../multimedia/star-wars/baby-yoda-1.webp" alt="">
 		<div class="product-info">
 			<h5 class="product-brand">STAR WARS</h5>
 			<h6 class="product-character">BABY YODA BLUEBALL</h6>
-			<p class="product-description"> Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+			<p class="product-description"> Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
+				limitada.</p>
 			<span class="product-price">$ 1799,99.-</span>
 			<div class="item-purchase">
-				<div class="item-number-selector"> 
+				<div class="item-number-selector">
 					<div class="minus"><input type="button" class="input-minus" value="-" name="num1" id="num1"></div>
-					<div class="number"><input type="text" class="input-number" placeholder="0" name="num" id="num" readonly=""></div>
+					<div class="number"><input type="text" class="input-number" placeholder="0" name="num" id="num"
+							readonly=""></div>
 					<div class="plus"><input type="button" class="input-plus" value="+" name="num2" id="num2"></div>
 				</div>
 				<div class="cart"> <input type="button" class="button-cart" value="Agregar al carrito "></div>
 			</div>
-			
+
 			<div class="payments">
-				<a class="payment-methods" href="../views/mediosDePago.html"> Ver métodos de pago -</a>
+				<a class="payment-methods"> Ver métodos de pago -</a>
 				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
 			</div>
 		</div>
 	</div>
+
+	<div class="modal-medios">
+
+		<div class="div-medios">
+
+			<div class="x-close"></div>
+
+			<h2 class="medios-tittle">Medios de pago para este producto</h2>
+			<p class="medios-paragraph">Podés pagar tus compras con cualquier de estos medios. Es rápido y seguro
+				siempre.
+			</p>
+
+			<div class="medios-line"></div>
+
+			<h3 class="medios-tittle">Tarjetas de crédito</h3>
+
+			<p class="medios-paragraph">Acreditación instantánea</p>
+
+			<h3 class="medios-tittle">Mismo precios en hasta 9 cuotas con estas bancos:</h3>
+
+			<div class="medios-bancos">
+
+				<div class=" santander"><img class="banco" src="../multimedia/medios/santander.svg" alt=""></div>
+				<div class=" icbc"><img class="banco" src="../multimedia/medios/icbc.svg" alt=""></div>
+				<div class=" bbva"><img class="banco" src="../multimedia/medios/bbva.svg" alt=""></div>
+				<div class="galicia"><img class="banco " src="../multimedia/medios/galicia.svg" alt=""></div>
+
+
+			</div>
+
+			<h3 class="medios-tittle">O hasta 12 cuotas con interés</h3>
+
+			<div class="medios-bancos">
+
+				<div class="mastercard"><img class="tarjeta" src="../multimedia/medios/mastercard.svg" alt=""></div>
+				<div class="visa"><img class="tarjeta" src="../multimedia/medios/visa.svg" alt=""></div>
+				<div class="paypal"><img class="tarjeta" src="../multimedia/medios/paypal.svg" alt=""></div>
+				<div class="naranja"><img class="tarjeta" src="../multimedia/medios/naranja.svg" alt=""></div>
+				<div class="cabal"><img class="tarjeta" src="../multimedia/medios/cabal.svg" alt=""></div>
+
+			</div>
+
+			<h3 class="medios-tittle">Dinero en tu cuenta de Mercado Pago</h3>
+
+			<p class="medios-paragraph">Al finalizar tu compra, pagás con el dinero disponible en tu cuenta. Podés
+				ingresar
+				dinero a Mercado Pago por Débito inmediato, transferencia bancaria o en efectivo.</p>
+
+			<p class="medios-paragraph">Acreditación instantánea.</p>
+
+			<div class="medios-bancos">
+
+				<div class="mercadoPago"><img class="pagoVirtual" src="../multimedia/medios/mercadoPago.svg" alt="">
+				</div>
+			</div>
+
+			<div class="medios-line"></div>
+
+			<h3 class="medios-tittle">Dinero en efectivo a traves de:</h3>
+
+			<div class="medios-bancos">
+
+				<div><img class="pagofacil" src="../multimedia/medios/pagofacil.png" alt=""></div>
+				<div><img class="rapipago" src="../multimedia/medios/rapipago.png" alt=""></div>
+
+			</div>
+		</div>
+	</div>
+
 	<div class="carrouselContenedor">
 		<div class="carrousel">
 			<span class="last-releases-tittle">ÚLTIMOS LANZAMIENTOS</span>
-			<ul class="puntos">
-				<li class="punto punto1"></li>
-				<li class="punto punto2"></li>
-			</ul>
-
 			<div class="contenedorGrande">
 				<div class="itemCarrousel">
 					<div class="background-red">
@@ -182,6 +257,10 @@
 					</div>
 				</div>
 			</div>
+			<ul class="puntos">
+				<li class="punto punto1"></li>
+				<li class="punto punto2"></li>
+			</ul>
 		</div>
 	</div>
 	<footer class="footer">
@@ -215,5 +294,7 @@
 	<script src="../js/indexScript.js"></script>
 	<script src="../js/itemScript.js"></script>
 	<script src="../js/carrouselScript.js"></script>
+	<script src="../js/mediosDePago.js"></script>
 </body>
+
 </html>

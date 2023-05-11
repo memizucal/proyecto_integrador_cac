@@ -5,19 +5,16 @@
 
 }
 
-/* .modal-medios{
-	display:none;
-} */
-
 .modal-medios {
 	background-color: rgba(255, 255, 255, 0.637);
 	position: absolute;
-	top: 0;
+	top: 100px;
 	min-width: 100vw;
 	min-height: calc(100vh - max(80px, 11vw));
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	display:none;
 }
 
 .div-medios {
