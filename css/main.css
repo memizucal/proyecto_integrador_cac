@@ -177,8 +177,8 @@
 		margin-right: 25px;
 		margin-bottom: 10px;
 		position: fixed;
-		bottom: 0;
-		right: 0;
+		top: 48vh;
+		right: 0.3vw;
 		padding: 10px;
 		z-index: 1;
 	}
@@ -254,6 +254,10 @@
 		max-width: 291px;
 		
 	}
+
+	.whatsapp-div{	
+		top: 56vh;
+	}
 }
 
 @media screen and (max-width: 688px)and (min-width:510px){
@@ -307,6 +311,10 @@
 	}
 	.main-h6{
 		font-size: 2.6rem;
+	}
+
+	.whatsapp-div{	
+		top: 32vh;
 	}
 }
 
@@ -399,4 +407,7 @@
 		align-self: center;
 	}
 	
+	.whatsapp-div{	
+		top: 43vh;
+	}
 }
