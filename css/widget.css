@@ -21,7 +21,7 @@
 	}
 	
 	.last-releases-img {
-		max-width: 100%;
+		max-width: 90%;
 		height: auto;
 		display: flex;
 	}
@@ -134,30 +134,28 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 20px
+		gap: 70px;
 	}
 
 	/* flecha izquierda */
-	.punto1{
+	.punto{
 		width: 2em;
 		height: 2em;
 		background-color: whitesmoke;
 		border: 0.5px  #333333;
 		border-radius: 50px;
-		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.336);	
+		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.80);	
 			
 	}
 
 	/* flecha derecha */
-	.punto2{
+	.punto{
 		width: 2em;
 		height: 2em;
 		background-color: whitesmoke;
 		border: 0.5px #333333;
 		border-radius: 50px;
-		position: relative;	
-		left: 50px;	
-		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.336);	
+		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133,  0.80);	
 			
 	}	
 
