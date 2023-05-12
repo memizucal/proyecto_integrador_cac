@@ -256,8 +256,15 @@
 	}
 
 	.whatsapp-div{	
-		top: 56vh;
+		top: 65%;
+		margin-right: 16px;
+
 	}
+
+	.whatsapp-icon{
+		max-width: 70px;
+	}
+	
 }
 
 @media screen and (max-width: 688px)and (min-width:510px){
@@ -314,7 +321,7 @@
 	}
 
 	.whatsapp-div{	
-		top: 32vh;
+		top: 36%;
 	}
 }
 
@@ -408,6 +415,12 @@
 	}
 	
 	.whatsapp-div{	
-		top: 43vh;
+		top: 50vh;
+		right:-3%;
+		margin: 0;
+	}
+
+	.whatsapp-icon{
+		max-width: 73%;
 	}
 }
