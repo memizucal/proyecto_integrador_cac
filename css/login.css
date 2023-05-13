@@ -1,0 +1,246 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.login-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 max(7.5%, 20px);
+}
+
+.login-tittle {
+	font-family: Raleway;
+	font-size: 4.2rem;
+	font-weight: 700;
+	line-height: 49px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #1F1F1F;
+	padding: max(3.5%, 36px) 0;
+
+}
+
+.user-data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: black;
+	font-family: Inter;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	text-align: left;
+}
+
+.label {
+	width: fit-content;
+	display: flex;
+	padding-bottom: 37px;
+}
+
+.label-username {
+	gap: 101px;
+}
+
+.label-password {
+	gap: 26px;
+}
+
+.input {
+	border: none;
+	border-bottom: solid 2px #FF3333;
+	width: 208px;
+	outline: none;
+}
+
+input[type=email] {
+	font-size: 2rem;
+}
+
+input[type=password] {
+	font-size: 2rem;
+}
+
+
+.input::placeholder {
+	color: #E0E0E0;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 19px;
+	text-align: left;
+	letter-spacing: 0.04em;
+}
+
+.input-password::placeholder {
+	font-size: 2rem;
+}
+
+
+.submit-button {
+	width: 103px;
+	height: 39px;
+	background-color: #FF3333;
+	border: none;
+	color: #FFFFFF;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 15px;
+	text-align: center;
+}
+
+.submit-rememberme {
+	display: flex;
+	width: 100%;
+	gap: 41px;
+	align-items: center;
+	justify-content: center;
+}
+
+.remember-me {
+	color: #1F1F1F;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-remember-me {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+	border: 2px solid #1F1F1F;
+}
+
+.retrieve-password {
+	padding: 22px 0 36px 0;
+	text-decoration: none;
+	color: #1D84B5;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 17px;
+
+}
+
+@media screen and (max-width:992px) and (min-width:689px) {
+
+	html {
+		font-size: 48%;
+	}
+
+	.label-password {
+		gap: 45px;
+	}
+
+
+	.submit-button {
+		font-size: 2rem;
+	}
+
+}
+
+@media screen and (max-width:688px) and (min-width: 510px) {
+
+	html {
+		font-size: 43%;
+	}
+
+	.label-password {
+		gap: 56px;
+	}
+
+	.submit-button {
+		font-size: 2rem;
+	}
+
+	.retrieve-password {
+		font-size: 1.8rem;
+	}
+
+	.footer{
+		height: max(135px, 40.5vw);
+	}
+
+	.footer-container-small{
+		height: max(135px, 46vw);
+	}
+
+	.footer-item, .footer-rights{
+		font-size: max(1.5rem, 15px);
+	}
+
+	.links {
+		display: flex;
+		gap: min(69px, 4em);
+		padding: max(0.4%, 15px);
+	}
+
+
+}
+
+@media screen and (max-width: 510px) {
+
+	html {
+		font-size: 38%;
+	}
+
+	.label-password {
+		gap: 61px;
+	}
+
+	.input {
+		border: none;
+		border-bottom: solid 2px #FF3333;
+		width: 160px;
+		outline: none;
+	}
+
+	.submit-button {
+		font-size: 2rem;
+	}
+
+	.retrieve-password {
+		font-size: 2rem;
+	}
+
+	.footer{
+		height: max(135px, 40.5vw);
+	}
+
+	.footer-container-small{
+		height: max(135px, 46vw);
+	}
+	
+	.footer-item, .footer-rights{
+		font-size: max(1.5rem, 12px);
+	}
+
+	.links {
+		display: flex;
+		gap: min(29px, 4em);
+		padding: max(0.4%, 15px);
+	}
+
+
+}
