@@ -6,6 +6,11 @@
 
 html {
 	font-size: 62.5%;
+	min-height: 100%;
+}
+
+body{
+	min-height: 100%;
 }
 
 .login-container {
@@ -15,7 +20,8 @@ html {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 0 max(7.5%, 20px);
+	padding: max(7.5%, 20px);
+	gap: 50px;
 }
 
 .login-tittle {
@@ -158,6 +164,15 @@ input[type=password] {
 		font-size: 2rem;
 	}
 
+	.footer{
+		height: max(135px, 34.5vw);
+	}
+
+	.footer-container-medium-large{
+		height: max(135px, 28.5vw);;
+
+	}
+
 }
 
 @media screen and (max-width:688px) and (min-width: 510px) {
@@ -165,7 +180,7 @@ input[type=password] {
 	html {
 		font-size: 43%;
 	}
-
+	
 	.label-password {
 		gap: 56px;
 	}
@@ -179,7 +194,7 @@ input[type=password] {
 	}
 
 	.footer{
-		height: max(135px, 40.5vw);
+		height: max(135px, 54.5vw);
 	}
 
 	.footer-container-small{
@@ -225,11 +240,11 @@ input[type=password] {
 	}
 
 	.footer{
-		height: max(135px, 40.5vw);
+		height: max(135px, 62.5vw);
 	}
 
 	.footer-container-small{
-		height: max(135px, 46vw);
+		height: max(135px, 55vw);
 	}
 	
 	.footer-item, .footer-rights{
