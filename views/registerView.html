@@ -11,7 +11,9 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/footer.css">
-	<title>FUNKOSHOP - REGISTRO</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<title>FUNKOSHOP - REGISTRO</title>	
 </head>
 <body>
 	<header class="header">
@@ -23,62 +25,54 @@
 			<div class="header-nav">
 				<ul class="header-links">
 					<li class="links">
-						<button class="shop-dropdown-button">SHOP
-							<span class="caret"></span></button>
-						<div class="shop-dropdown-container">
-							<ul class="dropdown-menu-shop" style="display:none">
-								<li class="sublink"><a class="header-item" href="./views/shopView.html">Ver todo</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewSW.html">Starwars
-										Collection</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewPK.html">Pokemon
-										Collection</a>
-								</li>
-								<li class="sublink"><a class="header-item" href="./views/itemViewHP.html">Harry Potter
-										Collection</a>
-								</li>
-							</ul>
-						</div>
+						<a class="header-item" href="../views/loginView.html">
+							SALIR
+						</a>	
 					</li>
-					<li class="links"><a href="" class="header-item">CONTACTO</a></li>
-					<li class="links"><a href="" class="header-item">LOGIN</a></li>
-					<li class="links"><a href="" class="header-item"><img src="./multimedia/icons/cart-icon.svg" alt=""
-								class="header-cart-icon"></a></li>
+					<li class="links">
+						<a class="header-item">USER</a>
+					</li>
 				</ul>
 			</div>
 			<!-- Dropdown menu -->
 			<div class="header-dropdown">
 				<button class="dropdown-button">
-					<img class="dropdown-icon" src="./multimedia/icons/icons8-menu-60.png" alt="">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
 				</button>
 				<ul class="dropdown-menu" style="display:none">
-					<button class="shop-dropdown-button-small">SHOP
-						<span class="caret"></span></button>
-					<div class="shop-dropdown-container">
-						<ul class="dropdown-menu-shop-small" style="display:none">
-							<li class="sublink"><a class="header-item" href="./views/shopView.html">Ver todo</a></li>
-							<li class="sublink"><a class="header-item" href="./views/itemViewSW.html">Starwars
-									Collection</a>
-							</li>
-							<li class="sublink"><a class="header-item" href="./views/itemViewPK.html">Pokemon
-									Collection</a>
-							</li>
-							<li class="sublink"><a class="header-item" href="./views/itemViewHP.html">Harry Potter
-									Collection</a>
-							</li>
-						</ul>
-					</div>
-					</button>
-					<li class="sublink"><a class="header-item" href="#">CONTACTO</a></li>
-					<li class="sublink"><a class="header-item" href="#">LOGIN</a></li>
-					<li class="sublink"><a class="header-item" href="#">CARRITO</li>
+					<li class="links">
+						<li class="links">
+							<a class="header-item">Veremos</a>
+						</li>
+						<a class="header-item" href="../views/loginView.html">
+							SALIR
+						</a>	
+					</li>
 				</ul>
+				
 			</div>
 		</div>
 	</header>
-	<div class="registro-usuario-container">
 
+	<div class="register-container">
+		<h1 class="register-tittle">CREA TU CUENTA</h1>
+		<h4 class="register-description">Completa el formulario para ser parte del mundo de los Funkos</h4>
+		<div class="user-data">
+			<label for="userName" class="label label-username">Nombre: </label>
+			<input type="text" class="input" placeholder="John">
+			<label for="lastName" class="label label-lastname">Apellido: </label>
+			<input type="text" class="input" placeholder="Doe">
+			<label for="email" class="label label-email">Email: </label>
+			<input type="email" class="input" placeholder="johndoe@correo.com">
+			<label for="password" class="label label-password">Contraseña: </label>
+			<input type="password" class="input input-password" placeholder="● ● ● ● ● ● ● ● ●">
+			<label for="repeatPassword" class="label label-repeatpassword">Repetir contraseña: </label>
+			<input type="password" class="input input-password" placeholder="● ● ● ● ● ● ● ● ●">
+		</div>
+		<div class="submit-register">
+			<input type="button" class="submit-button" value="Registrar">
+			<label for="submitTerms" class="submit-terms"><input type="checkbox" class="checkbox-terms">Acepto <a href="" class="terminos">términos y condiciones</a></label>
+		</div>
 
 	</div>
 
@@ -86,9 +80,9 @@
 		<div class="footer-container-small">
 			<div class="footer-links">
 				<ul class="links">
-					<li><a class="footer-item" href="./views/shopView.html">SHOP</a></li>
-					<li><a class="footer-item" href="">REGISTRARSE</a></li>
-					<li><a class="footer-item" href="">INGRESAR</a></li>
+					<li><a class="footer-item" href="../views/shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="../views/registerView.html">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="../views/loginView.html">INGRESAR</a></li>
 					<li><a class="footer-item" href="">CONTACTO</a></li>
 				</ul>
 			</div>
@@ -99,9 +93,9 @@
 		<div class="footer-container-medium-large">
 			<div class="footer-links">
 				<ul class="links">
-					<li><a class="footer-item" href="./views/shopView.html">SHOP</a></li>
-					<li><a class="footer-item" href="">REGISTRARSE</a></li>
-					<li><a class="footer-item" href="">INGRESAR</a></li>
+					<li><a class="footer-item" href="../views/shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="../views/registerView.html">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="../views/loginView.html">INGRESAR</a></li>
 					<li><a class="footer-item" href="">CONTACTO</a></li>
 				</ul>
 			</div>

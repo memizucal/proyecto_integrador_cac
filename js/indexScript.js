@@ -18,9 +18,6 @@ function click(openMenu) {
 	}
 }
 
-shopMenuButton.addEventListener('click', () => {
-	click(menuItems);
-})
 
 menuButton.addEventListener('click', () => {
 	click(menuItems2);
@@ -28,6 +25,10 @@ menuButton.addEventListener('click', () => {
 
 shopMenuButtonSmall.addEventListener('click', () => {
 	click(menuItemsSmall);
+})
+
+shopMenuButton.addEventListener('click', () => {
+	click(menuItems);
 })
 
 document.addEventListener('DOMContentLoaded', ()=>{
