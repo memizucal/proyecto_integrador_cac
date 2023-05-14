@@ -93,7 +93,7 @@ html{
 	padding: 5px;
 }
 
-input[type=text] {
+input[type=text], input[type=email], .input-message {
     text-align: left;
     color: #333333;
 	padding: 0 5px;
