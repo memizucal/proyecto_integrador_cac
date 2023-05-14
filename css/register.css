@@ -53,6 +53,7 @@ html {
 .input::placeholder{
 	color:#B9B9B9;
 }
+
 .submit-register {
 	display: flex;
 	width: 100%;
