@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../multimedia/icons/icono.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap"
+	rel="stylesheet">
+	<link rel="stylesheet" href="./css/modalCreate.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="modal-create">
+		<div class="div-create">
+			<img class="x-close" src="../multimedia/medios/x.svg" alt="">
+			<h2 class="create-tittle">CREAR NUEVO ITEM</h2>
+			<form action="" class="create-form">
+				<div class="cat-lic">
+					<label for="" class="label">Categoría: 
+						<select id="categoria" name="categoria" class="select">
+						<option value="">Seleccionar</option>
+						<option value="">StarWars</option>
+						<option value="">Harry Potter</option>
+						<option value="">Pokemon</option>
+					</select></label>
+					
+					<label for="" class="label">Licencia: 
+						<select id="licencia" name="licencia"  class="select">
+							<option value="">Seleccionar</option>
+							<option value="">Disney</option>
+							<option value="">Wizarding World</option>
+							<option value="">Pokemon</option>
+						</select>
+					</label>
+					
+				</div>
+				<div class="productName">
+					<label for="" class="label">Nombre del producto: 
+						<input type="text" class=" input input-productName" placeholder="Kakashi Hatake Shippuden Saga"> 
+					</label>
+					
+				</div>
+
+				<textarea class="input input-descripcion" placeholder="Descripción del producto"></textarea>
+
+				<div class="sku-price-stock">
+					<label for="" class="label">SKU: <input type="text" class="input input-sku" placeholder="SSK111AB001"></label>
+					
+					<label for="" class="label">Precio: <input type="text" class="input input-price" placeholder="$ 0.000,00"></label>
+					
+					<label for="" class="label">Stock: <input type="text" class="input input-stock" placeholder="0"></label>					
+				</div>
+
+				<div class="discount-cuotas">
+					<label for="" class="label">Descuento: <input type="text" class="input input-discount" placeholder="0%"></label>
+					
+					<label for="" class="label">Cuotas: 
+						<select id="cuotas" name="cuotas" class="select cuotas">
+							<option value="">3 Cuotas sin interés</option>
+							<option value="">6 Cuotas sin interés</option>
+							<option value="">12 Cuotas sin interés</option>
+						</select>
+					</label>
+					
+				</div>
+				<span class="add-img">
+					Imágenes:
+					<label for="actbtn" class="label actbtn">Elegir archivos
+						<input type="file" class=" input input-img" id="actbtn" hidden>
+					</label>
+					<span class="textbtn">No se ha seleccionado ningun archivo</span>
+				</span>
+				<div class="buttons">
+					<input type="submit" class="add-product" value="Agregar producto">
+					<input type="submit" class="clear" value="Limpiar">
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
