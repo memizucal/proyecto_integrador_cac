@@ -102,6 +102,9 @@ input[type=button] {
 
 tbody {
 	font-weight: 500;
+}
+
+td{
 	line-height: 61px;
 }
 
