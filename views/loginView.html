@@ -56,12 +56,12 @@
 	<div class="login-container" style="flex-flow: column nowrap">
 		<h1 class="login-tittle">INGRESAR A MI CUENTA</h1>
 		<div class="user-data">
-			<label for="userName" class="label label-username">Email: <input type="email" class="input" placeholder="johndoe@correo.com"></label>
-			<label for="password" class="label label-password">Contraseña: <input type="password" class="input input-password" placeholder="● ● ● ● ● ● ● ● ●"></label>
+			<label for="userName" class="label label-username">Email: <input id="userName-login" type="email" class="input" placeholder="johndoe@correo.com" required></label>
+			<label for="password" class="label label-password">Contraseña: <input id="password-login" type="password" class="input input-password" placeholder="● ● ● ● ● ● ● ● ●" required></label>
 		</div>
 		<div class="submit-rememberme">
-			<input type="button" class="submit-button" value="Ingresar">
-			<label for="rememberMe" class="remember-me"><input type="checkbox" class="checkbox-remember-me">Recordarme</label>
+			<input type="button" class="submit-button" value="Ingresar" id="submit-login">
+			<label for="rememberMe" class="remember-me"><input  id="checkbox-login" type="checkbox" class="checkbox-remember-me">Recordarme</label>
 		</div>
 		<a href="" class="retrieve-password">Olvidé mi contraseña</a>
 
@@ -95,6 +95,6 @@
 		</div>
 	</footer>
 
-	<script src="../js/indexScript.js"></script>	
+	<script type="module" src="../js/moduloLogin.js"></script>	
 </body>
 </html>

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../css/header.css">
 	<link rel="stylesheet" href="../css/footer.css">
 	<link rel="stylesheet" href="./css/admin.css">
+	<link rel="stylesheet" href="./css/modalCreate.css">
 	<title>FUNKOSHOP - BACKOFFICE</title>
 </head>
 <body>
@@ -75,12 +76,13 @@
 	</header>
 
 	<main class="main-admin">
+		<section id="add-modal" class="modal-show-none"> </section>
 		<section class="search">
 			<img src="../multimedia/lupita.png" alt="" class="search-icon"><input type="text" class="search-bar" placeholder="código, item o categoría">
 		</section>
 		<section class="admin-table-tittle">
 			<h1 class="admin-tittle">LISTADO DE PRODUCTOS</h1>
-			<label class="admin-add">AGREGAR <input type="button" ></label>
+			<label id="add-product" class="admin-add">AGREGAR <input type="button"></label>
 		</section>
 		<table class="admin-table">
 			<thead>
@@ -125,10 +127,6 @@
 			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
 		</div>
 	</footer>
-	<script src="../js/indexScript.js"></script>
-	<script src="../js/shopScript.js"></script>
-	<script src="./js/datatable.js"></script>
-
-	
+	<script type="module" src="../admin/modulesjs/adminScript.js"></script>
 </body>
 </html>

@@ -20,6 +20,15 @@ html {
 	/* z-index: 1; */
 }
 
+.modal-show{
+	position: absolute;
+}
+
+.modal-show-none{
+	display:none;
+}
+
+
 .div-create {
 	max-width: 90%;
 	height: 700px;
