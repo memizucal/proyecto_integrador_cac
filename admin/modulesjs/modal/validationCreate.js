@@ -1,4 +1,6 @@
-import { validateString } from "./validateString.js";
+import { validateString } from "./validateString.js"
+import { retrieveUrlsFromLocalStorage } from "./imgToBase64.js";
+
 
 const getDataAdd = () => {
 	let category, license, productName, description, sku, price, stock, discount, quota, image;
@@ -27,7 +29,11 @@ const getDataAdd = () => {
 	stock = document.querySelector("#stock").value;
 	discount = document.querySelector("#discount").value;
 	quota = document.querySelector("#quota").options[document.querySelector("#quota").selectedIndex].text;
-	// image = document.querySelector("#image").value;
+	image = retrieveUrlsFromLocalStorage()
+
+	
+	
+
 
 	let strValid = true;
 
@@ -67,6 +73,9 @@ const getDataAdd = () => {
 		quotaInput.style.border = "1px solid red";
 		strValid= false;
 	}
+	if(image.length < 1){
+		strValid=false;
+	}
 
 	const data = {
         category: category,
@@ -78,7 +87,7 @@ const getDataAdd = () => {
         stock: stock,
         discount: discount,
         quota: quota,
-        // image: image
+        image: image
     }
 
 	console.log(data)
