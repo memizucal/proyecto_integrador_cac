@@ -31,10 +31,6 @@ const getDataAdd = () => {
 	quota = document.querySelector("#quota").options[document.querySelector("#quota").selectedIndex].text;
 	image = retrieveUrlsFromLocalStorage()
 
-	
-	
-
-
 	let strValid = true;
 
 	if (!validateString(productName, textRegex)) {
