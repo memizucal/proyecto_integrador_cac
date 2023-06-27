@@ -14,7 +14,19 @@ const clearInput = () =>{
 	})
 
 	if(descriptionInput.value != "") descriptionInput.value = "";
+	
+	const clearImage= ()=>{
+		imageInput.type= "text";
+		imageInput.type= "file";
+	}
 
+	clearImage();
+
+	const clearLocalStorage = ()=>{
+		localStorage.clear();
+	}
+
+	clearLocalStorage();
 }
 
 
