@@ -22,7 +22,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		background-image: url(../multimedia/funkos-banner.png);
+		background-image: url(../../multimedia/funkos-banner.png);
 		height: max(388px, 25vw);
 		background-color: #C4C4C4;
 		background-size: cover;
@@ -110,6 +110,7 @@
 		max-width: 100vw;
 		min-width: 300px;
 		height: auto;
+		gap: 20px;
 	}
 
 	.main-h4 {
