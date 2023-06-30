@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.modal-medios {	
+	position: fixed;
+	min-width: 100vw;
+	top:0;
+	left: 0;
+	min-height: calc(100vh - max(80px, 11vw));
+	justify-content: center;
+	align-items: center;
+	display:none;
+	z-index: 1;
+}
+
+.div-medios {
+	max-width: 750px;
+	max-height: 70vh;
+	padding: 10px 100px;
+	border: 1px solid rgba(0, 0, 0, 0.425);
+	background-color: #FFF;
+	overflow-y: scroll;
+}
+
+.x-close {
+	cursor: pointer;
+	position: sticky;
+	top: 30px;
+	left: 550px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../multimedia/medios/x.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.medios-tittle {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 40px;
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+.medios-title:nth-child(4) {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.medios-title:nth-child(6) {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	color: green;
+}
+
+.medios-title:nth-child(8) {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.medios-title:nth-child(10) {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	font-family: "Inter", sans-serif;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.medios-paragraph {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+	line-height: 22px;
+	margin-left: 15px;
+	margin-left: 0;
+	margin-bottom: 2rem;
+}
+
+.medios-paragraph:nth-child(11) {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+	line-height: 22px;
+	margin-left: 15px;
+	margin-left: 0;
+	margin-bottom: 0.5rem;
+}
+
+.medios-paragraph:nth-child(12) {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
+	line-height: 22px;
+	margin-left: 15px;
+	margin-left: 0;
+	margin-bottom: 0.5rem;
+}
+
+.medios-line {
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	margin-bottom: 2rem;
+}
+
+.medios-bancos {
+	max-width: 70%;
+	padding: 0 30px;
+	margin-bottom: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.medios-bancos:nth-child(16) {
+	max-width: 40%;
+	padding: 0 30px;
+	margin-bottom: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banco {
+	width: 70px;
+	height: 40px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+.tarjeta {
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.pagoVirtual {
+	width: 80px;
+	height: 50px;
+
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.pagofacil {
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.rapipago {
+	width: 70px;
+	height: 40px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 992px) and (min-width: 688px) {
+
+	html{
+		font-size: 53%;
+	}
+	
+	.div-medios{
+		max-width: 640px;
+		max-height: 50vh;
+		padding: 10px 57px;
+	}	
+}
+
+@media screen and (max-width: 687px) and (min-width: 511px) {
+
+	html{
+		font-size: 50%;
+	}
+	
+	.div-medios{
+		max-width: 486px;
+		max-height: 50vh;
+		padding: 10px 38px;
+	}	
+	
+}
+
+@media screen and (max-width: 510px){
+	html{
+		font-size: 45%;
+	}
+	
+	.div-medios{
+		max-width: 350px;
+		max-height: 50vh;
+		padding: 10px 28px;
+	}	
+	
+}

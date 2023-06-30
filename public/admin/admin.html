@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../multimedia/icons/icono.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="./css/admin.css">
+	<link rel="stylesheet" href="./css/modalCreate.css">
+	<title>FUNKOSHOP - BACKOFFICE</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header-container">
+			<a href="../index.html" class="header-logo">
+				<img class="logo" src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+			</a>
+			<!-- Nav Menu -->
+			<div class="header-nav">
+				<ul class="header-links">
+					<li class="links">
+						<button class="shop-dropdown-button" >SHOP
+							<span class="caret"></span></button>
+						<div class="shop-dropdown-container">
+							<ul class="dropdown-menu-shop" style="display:none">
+								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+										Collection</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="links"><a href="" class="header-item">CONTACTO</a></li>
+					<li class="links"><a href="../views/loginView.html" class="header-item">LOGIN</a></li>
+					<li class="links"><a href="" class="header-item"><img src="../multimedia/icons/cart-icon.svg" alt=""
+								class="header-cart-icon"></a></li>
+				</ul>
+			</div>
+			<!-- Dropdown menu -->
+			<div class="header-dropdown">
+				<button class="dropdown-button">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
+				</button>
+				<ul class="dropdown-menu" style="display:none">
+					<button class="shop-dropdown-button-small">SHOP
+						<span class="caret"></span></button>
+						<div class="shop-dropdown-container">
+							<ul class="dropdown-menu-shop-small" style="display:none">
+								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+										Collection</a>
+								</li>
+							</ul>
+						</div>
+					</button>
+					<li class="sublink"><a class="header-item" href="../views/contactoView.html">CONTACTO</a></li>
+					<li class="sublink"><a class="header-item" href="../views/loginView.html">LOGIN</a></li>
+					<li class="sublink"><a class="header-item" href="#">CARRITO</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main-admin">
+		<section id="add-modal" class="modal-show-none"> </section>
+		<section class="search">
+			<img src="../multimedia/lupita.png" alt="" class="search-icon"><input type="text" class="search-bar" placeholder="código, item o categoría">
+		</section>
+		<section class="admin-table-tittle">
+			<h1 class="admin-tittle">LISTADO DE PRODUCTOS</h1>
+			<label id="add-product" class="admin-add">AGREGAR <input type="button"></label>
+		</section>
+		<table class="admin-table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Código</th>
+					<th>Nombre del Producto</th>
+					<th>Categoría</th>				
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>STW001001</td>
+					<td>Baby Yoda Blueball</td>
+					<td>STAR WARS</td>
+					<td><img src="../multimedia/Edit-icon.png" alt=""></td>
+					<td><img src="../multimedia/Delete-icon.png" alt=""></td>
+				</tr>
+			</tbody>			
+		</table>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-container-small">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="../views/shopView.html">SHOP</a></li>				
+				</ul>
+			</div>
+			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+		</div>
+
+		<div class="footer-container-medium-large">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="shopView.html">SHOP</a></li>						
+				</ul>
+			</div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
+		</div>
+	</footer>
+	<script type="module" src="../admin/modulesjs/adminScript.js"></script>
+</body>
+</html>

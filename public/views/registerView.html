@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<title>FUNKOSHOP - REGISTRO</title>	
+</head>
+<body>
+	<header class="header">
+		<div class="header-container">
+			<a href="../index.html" class="header-logo">
+				<img class="logo" src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+			</a>
+			<!-- Nav Menu -->
+			<div class="header-nav">
+				<ul class="header-links">
+					<li class="links">
+						<a class="header-item" href="../views/loginView.html">
+							SALIR
+						</a>	
+					</li>
+					<li class="links">
+						<a class="header-item">Veremos..</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Dropdown menu -->
+			<div class="header-dropdown">
+				<button class="dropdown-button">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
+				</button>
+				<ul class="dropdown-menu" style="display:none">
+					<li class="links">
+						<li class="links">
+							<a class="header-item">Veremos</a>
+						</li>
+						<a class="header-item" href="../views/loginView.html">
+							SALIR
+						</a>	
+					</li>
+				</ul>				
+			</div>
+		</div>
+	</header>
+
+	<div class="register-container">
+		<h1 class="register-tittle">CREA TU CUENTA</h1>
+		<h4 class="register-description">Completa el formulario para ser parte del mundo de los Funkos</h4>
+		<div class="user-data">
+			<label for="userName" class="label label-username">Nombre: </label>
+			<input type="text" class="input" placeholder="John">
+			<label for="lastName" class="label label-lastname">Apellido: </label>
+			<input type="text" class="input" placeholder="Doe">
+			<label for="email" class="label label-email">Email: </label>
+			<input type="email" class="input" placeholder="johndoe@correo.com">
+			<label for="password" class="label label-password">Contraseña: </label>
+			<input type="password" class="input input-password" placeholder="● ● ● ● ● ● ● ● ●">
+			<label for="repeatPassword" class="label label-repeatpassword">Repetir contraseña: </label>
+			<input type="password" class="input input-password" placeholder="● ● ● ● ● ● ● ● ●">
+		</div>
+		<div class="submit-register">
+			<input type="button" class="submit-button" value="Registrar">
+			<label for="submitTerms" class="submit-terms"><input type="checkbox" class="checkbox-terms" required>Acepto <a href="" class="terminos">términos y condiciones</a></label>
+		</div>
+
+	</div>
+
+	<footer class="footer">
+		<div class="footer-container-small">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="../views/shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="../views/registerView.html">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="../views/loginView.html">INGRESAR</a></li>
+					<li><a class="footer-item" href="../views/contactoView.html">CONTACTO</a></li>
+				</ul>
+			</div>
+			<div class="footer-logo"><img class="footer-img" src="./multimedia/branding/isotype.svg" alt=""></div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+		</div>
+
+		<div class="footer-container-medium-large">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="../views/shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="../views/registerView.html">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="../views/loginView.html">INGRESAR</a></li>
+					<li><a class="footer-item" href="../views/contactoView.html">CONTACTO</a></li>
+				</ul>
+			</div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+			<div class="footer-logo"><img class="footer-img" src="./multimedia/branding/isotype.svg" alt=""></div>
+		</div>
+	</footer>
+</body>
+</html>

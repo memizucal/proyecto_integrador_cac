@@ -1,0 +1,427 @@
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html{
+		font-size: 62.5%;
+	}
+
+	.main {
+		width: 100%;
+		max-width: 100%;
+		background-color: #F5F5F5;
+		overflow-x: hidden;
+	}
+
+	/* empieza banner */
+
+	.main-banner {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url(../../multimedia/funkos-banner.png);
+		height: max(388px, 25vw);
+		background-color: #C4C4C4;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.main-content {
+		height: max(388px, 25vw);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-left:max(7.5%, 20px);
+		font-family: 'Raleway';
+	}
+
+	.main-content .main-h4 {
+		font-size: 3.8rem;
+		font-weight: 700;
+		line-height: 45px;
+		color:white;
+		padding-bottom: 15px;
+		margin: 0;
+
+	}
+
+	.main-content .main-h6 {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 21px;
+		margin-top: 7px;
+		color:white;
+		padding-bottom: 15px;
+		margin: 0;		
+	}
+
+	.main-link-shop, .main-link-shop:hover {
+		width: 211px;
+		height: 47px;	
+		background-color: white;
+		text-decoration: none;
+		border: none;
+		border-radius: 50px;
+		padding: 11px;
+		font-family: 'Inter';
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 24px;
+		color: #111111;
+		text-align: center;
+	}
+
+	/* termina banner */
+
+	.main-products {
+		padding: 0 max(7.5%, 20px);
+	}
+
+	.main-container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 600px;
+		grid-template-areas:
+			"character image"
+		;
+		min-width: 300px;
+
+	}
+
+	.main-pk {
+		display: grid;
+		min-height: calc(100% - 144px);
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 600px;
+		grid-template-areas:
+			"image character"
+		;
+	}
+
+	.main-character {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		grid-area: character;
+		max-width: 100vw;
+		min-width: 300px;
+		height: auto;
+		gap: 20px;
+	}
+
+	.main-h4 {
+		max-width: 441px;
+		font-family: Raleway;
+		font-size: 4.6rem;
+		font-weight: 500;
+		line-height: 54px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 6px;
+	}
+
+	.main-h6 {
+		max-width: 458px;
+		font-family: Raleway;
+		color: #4F4F4F;
+		font-size: 2.4rem;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	.main-line {
+		max-width: 645px;
+		border: 3px solid #FF3333;
+		margin-top: 28px;
+	}
+
+	.main-collection-button, .main-collection-button:hover{
+		width: 291px;
+		height: 65px;
+		margin-top: 34px;
+		padding: 18px 38px;
+		display: flex;
+		justify-content: center;
+		background-color: #30343F;
+		text-decoration: none;
+		border: none;
+		border-radius: 50px;
+		font-family: 'Inter';
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 29px;
+		letter-spacing: 0em;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.main-image {
+		grid-area: image;
+		display: flex;
+		align-self: center;
+		justify-content: center;
+	}
+
+	.item-img {
+		max-width: 80%;
+		height: auto;
+	}
+
+	.whatsapp-div{		
+		margin-right: 25px;
+		margin-bottom: 10px;
+		position: fixed;
+		top: 48vh;
+		right: 0.3vw;
+		padding: 10px;
+		z-index: 1;
+	}
+	
+	.whatsapp-link{
+		display:block;
+		max-width:80px;
+	}
+	
+	.whatsapp-icon{
+		max-width: 80px;
+	}
+	
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 57%;
+	}
+
+	.main-banner{
+		height:max(145px, 40vw);
+	}
+
+	.main-content{
+		height: max(135px, 40vw);
+	}
+
+	.main-content .main-h4{
+		font-size: 3.8rem;
+		
+	}
+
+	.main-content .main-h6{
+		font-size: 2.4rem;
+		color:white;
+	}
+
+	.main-link-shop{
+		max-width: 211px;
+		height: auto;
+	}
+
+	.main-products{
+		padding: max(5.5%, 20px) max(7.5%, 20px);
+	}
+
+	.main-container{
+		grid-template-rows: 450px;		
+	}
+
+	.main-character{
+		width: 100%;
+	}
+
+	.main-character .main-h4{
+		font-size: 4rem;
+		line-height: 40px;
+	}
+
+	.main-character .main-h6{
+		font-size: 2.4rem;
+		line-height: 20px;
+	}
+	
+	.item-img{
+		max-width: 100%;
+	}
+
+	.main-collection-button{
+		margin:0;
+		max-width: 291px;
+		
+	}
+
+	.whatsapp-div{	
+		top: 65%;
+		margin-right: 16px;
+
+	}
+
+	.whatsapp-icon{
+		max-width: 70px;
+	}
+	
+}
+
+@media screen and (max-width: 688px)and (min-width:510px){
+
+	.main-banner{
+		height: max(145px, 40vw);
+	}
+
+	.main-container{
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"image"
+		"character"
+		;
+		justify-items: center;
+		align-items: center;
+		max-width: 610px;
+	}
+
+	.main-content{
+		height: max(135px, 40vw);
+	}
+
+	.main-content .main-h6{
+		color:white;
+		font-size: 2.5rem;
+	}
+	
+	.main-products {
+		padding: 0 max(5.5%, 10px);
+	}
+
+	.main-character{
+		padding: 0 max(1.5%, 20px);
+	}
+
+	.main-collection-button{
+		align-self: center;
+		margin:0;
+	}
+
+	.main-link-shop{
+		font-size: 2.3rem;
+		max-width: 70%;
+	}
+
+	.main-h4{
+		font-size: 3.8rem;
+		line-height: 28px;
+	}
+	.main-h6{
+		font-size: 2.6rem;
+	}
+
+	.whatsapp-div{	
+		top: 36%;
+	}
+}
+
+@media screen and (max-width: 510px) {
+
+	html{
+		font-size: 30%;
+	}
+
+	.main-banner{
+		height: max(250px, 45vw);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.main-content{
+		width: 100%;
+		height: max(135px, 45vw);
+		padding: max(5.5%, 10px);
+		display:flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.main-link-shop{
+		max-width: 50%;
+		font-size: 2.3rem;
+	}
+
+	.main-content .main-h4{
+		line-height: 30px;
+		margin: 0;
+	}
+	.main-content .main-h6{
+		font-size: 2.3rem;
+		color:white;
+		margin: 0;
+	}
+
+	.main-container{
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"image"
+		"character"
+		;
+
+		align-items: center;
+		max-width: 610px;
+	}
+
+	.main-container{
+		justify-items: center;
+		padding: 12px 0;
+	}
+		
+	.main-products {
+		padding: 0 max(5.5%, 10px) max(5.5%, 10px);
+	}
+
+	.main-character{
+		max-width: 80%;
+	}
+
+	.main-image{
+		align-items: center;
+		max-width: 80%;
+	}
+
+	.main-h4{
+		font-size: max(3rem, 15px);
+		line-height: 36px;
+	}
+
+	.main-h6{
+		max-width: 80%;
+		font-size: max(2.5rem, 12px);
+	}
+
+	.main-line{
+		max-width: 100%;
+	}
+
+	.main-collection-button, .main-collection-button:hover{
+		max-width: 220px;
+		height: auto;
+		padding: 20px;
+		margin:0;
+		align-self: center;
+	}
+	
+	.whatsapp-div{	
+		top: 50vh;
+		right:-3%;
+		margin: 0;
+	}
+
+	.whatsapp-icon{
+		max-width: 73%;
+	}
+}

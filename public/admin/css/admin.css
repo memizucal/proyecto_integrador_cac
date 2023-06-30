@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.main-admin {
+	width: 100%;
+	min-height: calc(100vh - max(343px, 18.5vw) - 144px);
+	padding: 36px max(7.5vw, 40px) 10px;
+}
+
+.search {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+
+.search-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.search-bar {
+	min-width: 250px;
+	width: 60%;
+	max-width: 613px;
+	height: 44px;
+	border: solid 2px #30343F;
+	border-radius: 6px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: clamp(12px, 2.5vw, 20px);
+	line-height: 24px;
+	text-align: left;
+	padding: 0 23px;
+	color: #333333;
+	outline: none;
+}
+
+.admin-table-tittle {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.admin-tittle {
+	font-family: Raleway;
+	font-size: clamp(12px, 3.5vw, 42px);
+	font-weight: 700;
+	line-height: 49px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #1F1F1F;
+	padding: max(3.5%, 36px) 0;
+}
+
+.admin-add {
+	font-family: Inter;
+	font-size: clamp(12px, 2.5vw, 24px);
+	font-weight: 700;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	text-align: right;
+	color: #1F1F1F;
+	display: flex;
+	align-items: center;
+	gap: 28px;
+	cursor: pointer;
+}
+
+input[type=button] {
+	min-width: 20px;
+	width: 39px;
+	min-height: 20px;
+	height: 39px;
+	background-image: url(../../multimedia/agregar.png);
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+}
+
+.admin-table {
+	width: 100%;
+	font-family: Inter;
+	font-size: clamp(12px, 2.5vw, 24px);
+	font-weight: 700;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	text-align: left;
+	padding: 22px 0;
+	color: #1F1F1F;
+}
+
+tbody {
+	font-weight: 500;
+}
+
+td{
+	line-height: 61px;
+}
+
+.footer {
+	min-width: 100%;
+	background-color: #30343F;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 23px;
+	color: #FFFFFF;
+	height: max(150px, 7vw);
+	position: absolute;
+	bottom: 0;
+}
+
+.footer-container-medium-large{
+	height: max(150px, 7vw);
+}
+
+.footer-container-small{
+	flex-direction: row;
+	height: max(150px, 7vw);
+	padding: 0 max(0.4%, 15px);
+}
+
+.footer-rights{
+	padding:  10px 0 ;
+	font-size: clamp(12px, 3.5vw, 24px);
+}
+
+.footer-logo{
+	padding: 0;	
+}

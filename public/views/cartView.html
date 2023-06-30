@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<link rel="shortcut icon" href="../multimedia/icons/icono.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway:wght@500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/widget.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/cart.css">
+	<title>Funko Shop - CARRITO</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-container">
+			<a href="../index.html" class="header-logo">
+				<img class="logo" src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+			</a>
+			<!-- Nav Menu -->
+			<div class="header-nav">
+				<ul class="header-links">
+					<li class="links">
+						<button class="shop-dropdown-button">SHOP
+							<span class="caret"></span></button>
+						<div class="shop-dropdown-container">
+							<ul class="dropdown-menu-shop" style="display:none">
+								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars
+										Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon
+										Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+										Collection</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="links"><a href="../views/contactoView.html" class="header-item">CONTACTO</a></li>
+					<li class="links"><a href="../views/loginView.html" class="header-item">LOGIN</a></li>
+					<li class="links"><a href="" class="header-item"><img src="../multimedia/icons/cart-icon.svg" alt=""
+								class="header-cart-icon"></a></li>
+				</ul>
+			</div>
+			<!-- Dropdown menu -->
+			<div class="header-dropdown">
+				<button class="dropdown-button">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
+				</button>
+				<ul class="dropdown-menu" style="display:none">
+					<button class="shop-dropdown-button-small">SHOP
+						<span class="caret"></span></button>
+					<div class="shop-dropdown-container">
+						<ul class="dropdown-menu-shop-small" style="display:none">
+							<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+							<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+							</li>
+							<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+							</li>
+							<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+									Collection</a>
+							</li>
+						</ul>
+					</div>
+					</button>
+					<li class="sublink"><a class="header-item" href="../views/contactoView.html">CONTACTO</a></li>
+					<li class="sublink"><a class="header-item" href="../views/loginView.html">LOGIN</a></li>
+					<li class="sublink"><a class="header-item" href="#">CARRITO</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="main-cart">
+		<section class="section product-details">
+			<h1 class="cart-tittle">MI CARRITO</h1>
+			<table class="product-cart">
+				<thead>
+					<tr>
+						<th class="column item-label">Producto</th>
+						<th class="column"></th>
+						<th class="column th qty-label">Cantidad</th>
+						<th class="column total-label">Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="item-detail">
+							<img class="product-img" src="../multimedia/harry-potter/harry-1.webp" alt="">
+							<div class="product-info">
+								<h5 class="product-brand">HARRY POTTER</h5>
+								<h6 class="product-character">Harry Potter</h6>
+								<span class="product-price">$ 1799,99.-</span>
+							</div>
+						</td>
+						<td>
+							<img src="../multimedia/Delete-icon.png" alt="">
+						</td>
+						<td>
+							<select name="quantity" id="quantity">
+								<option selected value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+								<option value="">4</option>
+								<option value="">5</option>
+								<option value="">6</option>
+								<option value="">7</option>
+							</select>
+						</td>
+						<td>
+							<span class="total-price">$1799,99</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="section shopping-details">
+			
+
+		</section>
+	</div>
+
+
+	<footer class="footer">
+		<div class="footer-container-small">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="../views/registerView.html">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="../views/loginView.html">INGRESAR</a></li>
+					<li><a class="footer-item" href="../views/contactoView.html">CONTACTO</a></li>
+				</ul>
+			</div>
+			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+		</div>
+
+		<div class="footer-container-medium-large">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="shopView.html">SHOP</a></li>
+					<li><a class="footer-item" href="../views/registerView.html">REGISTRARSE</a></li>
+					<li><a class="footer-item" href="../views/loginView.html">INGRESAR</a></li>
+					<li><a class="footer-item" href="../views/contactoView.html">CONTACTO</a></li>
+				</ul>
+			</div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
+		</div>
+	</footer>
+	<script src="../js/indexScript.js"></script>
+
+</body>
+
+</html>

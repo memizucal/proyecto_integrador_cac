@@ -1,0 +1,274 @@
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html{
+		font-size: 62.5%;
+	}
+
+
+	.last-releases-tittle {
+		font-family: Raleway;
+		color: #111111;
+		font-size: 3.5rem;
+		font-weight: 700;
+		line-height: 54px;		
+		align-self: center;
+		justify-self:center;
+		margin-bottom:1em;
+	}
+	
+	.last-releases-img {
+		max-width: 90%;
+		height: auto;
+		display: flex;
+	}
+	
+
+	.product-info {
+		font-family: 'Inter';
+		font-style: normal;
+		line-height: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;	
+		padding: 0 0 15px 15px;
+	}
+
+	.product-brand {
+		font-weight: 500;
+		font-size: 1.4rem;
+		color: #333333;
+	}
+
+	.product-character {
+		font-weight: 700;
+		font-size: 1.8rem;
+		color: #111111;
+	}
+
+	.product-price {
+		font-weight: 400;
+		font-size: 1.6rem;
+		color: #333333;
+	}
+
+	.product-payment {
+		font-weight: 700;
+		font-size: 1.2rem;
+		color: #1D84B5;
+	}
+
+	.background-red {
+		max-width: 97px;
+		height: 30px;
+		background-color: red;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		top: 0;
+		left: calc(100% - 97px);
+		border-radius: 0 20px 0;
+	}
+
+	.background-span {
+		color: #FFF;
+		font-size: 1.4rem;
+		font-family: 'Inter';
+		font-weight: 500;
+		padding: 5px 35px;
+	}
+
+	.carrouselContenedor{
+		display: flex;		
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		background-color: #F5F5F5;
+		min-height: 100%;		
+	}
+
+	.carrousel{
+		width: 90%;
+		height: 100%;		
+		margin: 0 max(7.5%, 20px) 26px;
+		background-color: #F5F5F5;		
+		display: flex;	
+		flex-flow:column nowrap;
+		overflow: hidden;
+		
+	}
+
+	.contenedorGrande{
+		width: 200%;
+		height: 100%;	
+		display: inline-flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		transition: all .5s ease;	
+		background-color: #F5F5F5;
+		border-radius: 20px;
+
+		transform: translateX(0%);
+		
+	}
+	
+	.itemCarrousel{
+		width: calc(100%/2.5);		
+		margin: 5px;
+		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.336);
+		border-radius: 20px;
+		display: flex;
+		flex-flow: column nowrap;	
+		min-height: 398px;	
+	}
+
+	.puntos{
+		width: 100%;
+		list-style: none;		
+		padding: 3em;		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 70px;
+	}
+
+	/* flecha izquierda */
+	.punto{
+		width: 2em;
+		height: 2em;
+		background-color: whitesmoke;
+		border: 0.5px  #333333;
+		border-radius: 50px;
+		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.80);	
+			
+	}
+
+	/* flecha derecha */
+	.punto{
+		width: 2em;
+		height: 2em;
+		background-color: whitesmoke;
+		border: 0.5px #333333;
+		border-radius: 50px;
+		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133,  0.80);	
+			
+	}	
+
+	.punto.activo{
+		background-color: #FF3333;
+	}
+
+
+@media screen and (max-width: 993px) and (min-width: 689px) {
+
+	html{
+		font-size: 50%;
+	}
+
+	.product-brand {
+		font-weight: 500;
+		font-size: 2rem;
+		color: #333333;
+	}
+
+	.last-releases-tittle{
+		font-size: 2.9rem;
+		margin-bottom: 10px;
+	}
+
+
+}
+
+@media screen and (max-width: 688px) {
+
+	html{
+		font-size:45%;
+	}
+		
+	.carrouselContenedor{
+		padding: 0 max(5.5%, 20px) max(5.5%, 20px);
+	}
+
+	.carrousel{
+		margin: 0;
+		min-width: 91%;
+	}
+
+	.contenedorGrande{
+		overflow-x: scroll;
+		width: 99%;				
+	} 
+
+	.contenedorGrande::-webkit-scrollbar{
+		display:none;
+	}	
+
+	.itemCarrousel{
+		min-height: 403px;
+		width: 100%;
+	}
+
+	.puntos{
+		display: none;
+	}
+
+	.punto3{
+		display: flex;
+		width: 1.5em;
+		height: 1.5em;
+		background-color: whitesmoke;
+		border: 0.5px #333333;
+		border-radius: 50px;
+		position: relative;	
+		left: 50px;	
+		box-shadow: 0px 0px 10px 2px rgba(133, 133, 133, 0.336);	
+	}
+	
+	.last-releases-tittle{
+		padding: max(3.5%, 20px) max(7.5%, 20px);
+		margin:0;
+	}		
+	
+	.last-releases-img{
+		max-width:80%;
+		height: auto;		
+		align-self: center;
+	}
+
+	.product-info{
+		padding: 10px;
+		max-width: 100%;
+		min-width: 270px;
+		height: auto;		
+	}
+
+	.product-brand {
+		font-weight: 500;
+		font-size: 3rem;
+		color: #333333;
+	}
+
+	.product-character {
+		font-weight: 700;
+		font-size: 2.5rem;
+		color: #111111;
+	}
+
+	.product-price {
+		font-weight: 400;
+		font-size: 2.3rem;
+		color: #333333;
+	}
+
+	.product-payment {
+		font-weight: 700;
+		font-size: 2.4rem;
+		color: #1D84B5;
+	}
+
+}
