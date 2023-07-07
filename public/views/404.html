@@ -3,12 +3,70 @@
 <html>
 
 <head>
-    <title>Simple | tsParticles 404</title>
-    <link type="text/css" rel="stylesheet" href="../css/index.css" />
-    <link rel="icon" type="image/x-icon" href="../images/tsParticles-64.png">
+    <title>404 - Funkoshop</title>
+    <link type="text/css" rel="stylesheet" href="../css/index.css" />  
 </head>
 
 <body>
+    <header class="header">
+		<div class="header-container">
+			<a href="../index.html" class="header-logo">
+				<img class="logo" src="../multimedia/branding/logo_light_horizontal.svg" alt="">
+			</a>
+			<!-- Nav Menu -->
+			<div class="header-nav">
+				<ul class="header-links">
+					<li class="links">
+						<button class="shop-dropdown-button" >SHOP
+							<span class="caret"></span></button>
+						<div class="shop-dropdown-container">
+							<ul class="dropdown-menu-shop" style="display:none">
+								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+										Collection</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="links"><a href="" class="header-item">CONTACTO</a></li>
+					<li class="links"><a href="../views/loginView.html" class="header-item">LOGIN</a></li>
+					<li class="links"><a href="" class="header-item"><img src="../multimedia/icons/cart-icon.svg" alt=""
+								class="header-cart-icon"></a></li>
+				</ul>
+			</div>
+			<!-- Dropdown menu -->
+			<div class="header-dropdown">
+				<button class="dropdown-button">
+					<img class="dropdown-icon" src="../multimedia/icons/icons8-menu-60.png" alt="">
+				</button>
+				<ul class="dropdown-menu" style="display:none">
+					<button class="shop-dropdown-button-small">SHOP
+						<span class="caret"></span></button>
+						<div class="shop-dropdown-container">
+							<ul class="dropdown-menu-shop-small" style="display:none">
+								<li class="sublink"><a class="header-item" href="./shopView.html">Ver todo</a></li>
+								<li class="sublink"><a class="header-item" href="./itemViewSW.html">Starwars Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewPK.html">Pokemon Collection</a>
+								</li>
+								<li class="sublink"><a class="header-item" href="./itemViewHP.html">Harry Potter
+										Collection</a>
+								</li>
+							</ul>
+						</div>
+					</button>
+					<li class="sublink"><a class="header-item" href="../views/contactoView.html">CONTACTO</a></li>
+					<li class="sublink"><a class="header-item" href="../views/loginView.html">LOGIN</a></li>
+					<li class="sublink"><a class="header-item" href="#">CARRITO</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
     <div class="error-page">
         <div>
             <h1 data-h1="404">404</h1>
@@ -18,11 +76,29 @@
 
     <a href="#" class="back">Atrás</a>
 
-    <div id="tsparticles"></div>
+    <footer class="footer">
+		<div class="footer-container-small">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="../views/shopView.html">SHOP</a></li>				
+				</ul>
+			</div>
+			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+		</div>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.bundle.min.js"></script>
-    <script type="text/javascript" src="../js/modules/404.js"></script>
+		<div class="footer-container-medium-large">
+			<div class="footer-links">
+				<ul class="links">
+					<li><a class="footer-item" href="shopView.html">SHOP</a></li>						
+				</ul>
+			</div>
+			<span class="footer-rights">All rights reserved 2022 - Funkoshop &copy;</span>
+			<div class="footer-logo"><img class="footer-img" src="../multimedia/branding/isotype.svg" alt=""></div>
+		</div>
+	</footer>
+
+     <script type="text/javascript" src="../js/modules/404.js"></script>
 </body>
 
 </html>

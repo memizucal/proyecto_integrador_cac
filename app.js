@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const PORT = 3001;
-const itemRoutes = require('./src/routes/itemsRoutes.js')
+const itemRoutes = require('./src/routes/itemsRoutes.js');
+const { notFound } = require('./src/utils/errorsHandler.js');
 
 /*Define carpeta de archivos estaticos*/
 app.use(express.static('public'));
@@ -14,9 +15,7 @@ app.use(express.json()); //Convierte lo enviado en el body a JSON
 app.use('/', itemRoutes); //Ruta con api/itemRoutes
 
 /*Middleware para manejar el error 404 (Despues de las rutas y antes del .listen)*/
-app.use((req, res, next) => {
-	res.status(404).sendFile(__dirname+"/public/views/404.html");
-})
+app.use(notFound);
 
 /*Metodo para correr el server*/
 app.listen(PORT, ()=> console.log(`Escuchando desde puerto ${PORT}`));
