@@ -1,6 +1,10 @@
+/*Requiero el modulo dotenv para ocultar datos sensibles*/
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT;
+
 const itemRoutes = require('./src/routes/itemsRoutes.js');
 const { notFound } = require('./src/utils/errorsHandler.js');
 
