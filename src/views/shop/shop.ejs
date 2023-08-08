@@ -1,0 +1,180 @@
+<%- include('../partials/header') %>
+<main class="main-shop">
+	<div class="whatsapp-div" id="whatsapp-div" style="display: none;"><a href="https://wa.me/" target="_blank" class="whatsapp-link"><img src="../multimedia/icons/whatsapp-icon.png" alt="" class="whatsapp-icon"></a></div>
+	<aside class="sidebar">
+		<span class="options search">BUSCAR<input type="search" placeholder="Item o categoría"
+				class="input search-input"></span>
+		<span class="options order">ORDENAR POR
+			<select class="input order-input" name="" id="">
+				<option value="">Precio (Mayor a menor)</option>
+				<option value="">Precio (Menor a mayor)</option>
+				<option value=""> A - Z</option>
+				<option value=""> Z - A</option>
+			</select>
+		</span>
+		<span class="options price style-one">PRECIO
+			<div class="price-options">
+				<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+				<span class="max-price">- MAX <input type="text" placeholder="0" class="input price-input"></span>
+			</div>
+		</span>
+
+		<span class="options price style-two">PRECIO
+			<div class="price-options">
+				<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+				<span class="max-price">MAX <input type="text" placeholder="0" class="input price-input"></span>
+			</div>
+		</span>
+
+		<span class="options filter">FILTRAR
+			<div class="checkbox-options">
+				<div class="label-filter"><input type="checkbox" class="checkbox-filter">NUEVOS</div>
+				<div class="label-filter"><input type="checkbox" class="checkbox-filter">OFERTAS</div>
+				<div class="label-filter"><input type="checkbox" class="checkbox-filter">EDICIÓN
+					ESPECIAL</div>
+				<div class="label-filter"><input type="checkbox" class="checkbox-filter">FAVORITOS</div>
+			</div>
+
+		</span>
+	</aside>
+	<div class="sidebar-dropdown">
+		<button class="sidebar-dropdown-button">
+			<img class="dropdown-icon-filter" src="../multimedia/icons/filter-icon.png" alt="">
+		</button>
+		<div class="sidebar-dropdown-menu" style="display:none">
+			<span class="options search">BUSCAR<input type="search" placeholder="Item o categoría"
+					class="input search-input"></span>
+			<span class="options order">ORDENAR POR
+				<select class="input order-input" name="" id="">
+					<option value="">Precio (Mayor a menor)</option>
+					<option value="">Precio (Menor a mayor)</option>
+					<option value=""> A - Z</option>
+					<option value=""> Z - A</option>
+				</select>
+			</span>
+			<span class="options price style-one">PRECIO
+				<div class="price-options">
+					<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+					<span class="max-price">- MAX <input type="text" placeholder="0"
+							class="input price-input"></span>
+				</div>
+			</span>
+
+			<span class="options price style-two">PRECIO
+				<div class="price-options">
+					<span class="min-price">MIN <input type="text" placeholder="0" class="input price-input"></span>
+					<span class="max-price">MAX <input type="text" placeholder="0" class="input price-input"></span>
+				</div>
+			</span>
+
+			<span class="options filter">FILTRAR
+				<div class="checkbox-options">
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">NUEVOS</div>
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">OFERTAS</div>
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">EDICIÓN
+						ESPECIAL</div>
+					<div class="label-filter"><input type="checkbox" class="checkbox-filter">FAVORITOS</div>
+				</div>
+
+			</span>
+		</div>
+	</div>
+	<div class="product-grid">
+		<div class="product" style="grid-area:product-1">
+			<img src="../multimedia/star-wars/trooper-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">STAR WARS</h5>
+				<h6 class="product-character">STORMTROOPER LIGHTSABER</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-2">
+			<img src="../multimedia/pokemon/pidgeotto-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">POKEMON</h5>
+				<h6 class="product-character">PIDGEOTTO</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-3">
+			<img src="../multimedia/harry-potter/luna-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">HARRY POTTER</h5>
+				<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-4">
+			<img src="../multimedia/star-wars/trooper-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">STAR WARS</h5>
+				<h6 class="product-character">STORMTROOPER LIGHTSABER</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-5">
+			<img src="../multimedia/pokemon/pidgeotto-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">POKEMON</h5>
+				<h6 class="product-character">PIDGEOTTO</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-6">
+			<img src="../multimedia/harry-potter/luna-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">HARRY POTTER</h5>
+				<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-7">
+			<img src="../multimedia/star-wars/trooper-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">STAR WARS</h5>
+				<h6 class="product-character">STORMTROOPER LIGHTSABER</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-8">
+			<img src="../multimedia/pokemon/pidgeotto-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">POKEMON</h5>
+				<h6 class="product-character">PIDGEOTTO</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="product" style="grid-area:product-9">
+			<img src="../multimedia/harry-potter/luna-1.webp" alt="" class="img-product">
+			<div class="product-info">
+				<h5 class="product-brand">HARRY POTTER</h5>
+				<h6 class="product-character">LUNA LOVEGOOD LION MASK</h6>
+				<span class="product-price">$ 1799,99.-</span>
+				<span class="product-payment">3 CUOTAS SIN INTERÉS</span>
+			</div>
+		</div>
+		<div class="pages">
+			<div class="page-element"><span class="page" href="#"><img src="../multimedia/Vector.png" alt=""></span>
+			</div>
+			<div class="page-element"><span class="page" href="#">1</span></div>
+			<div class="page-element"><span class="page" href="#">2</span></div>
+			<div class="page-element"><span class="page" href="#">...</span></div>
+			<div class="page-element"><span class="page" href="#">9</span></div>
+			<div class="page-element"><span class="page" href="#">10</span></div>
+			<div class="page-element"><span class="page" href="#"><img src="../multimedia/Vectorderecha.png" alt="">
+				</span>
+			</div>
+		</div>
+	</div>
+</main>
+<script type="module" src="../js/moduloShop.js"></script>
+
+<%- include('../partials/footer') %>

@@ -40,7 +40,7 @@ html {
 
 }
 
-.user-data{
+.register-container>.user-data{
 	width: fit-content;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);

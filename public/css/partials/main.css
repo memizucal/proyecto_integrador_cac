@@ -77,6 +77,10 @@
 
 	/* termina banner */
 
+	.main-shop{
+		background-color: #ffffff;
+	}
+
 	.main-products {
 		padding: 0 max(7.5%, 20px);
 	}

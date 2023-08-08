@@ -4,7 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 /**/
-@import url('./partials/bootstrap.min.css');
+
+@import url('./partials/login.css');
+@import url('./partials/register.css');
+@import url('./partials/contact.css');
+@import url('./partials/404.css');
+@import url('./partials/addedToCart.css');
+
+/* @import url('./partials/bootstrap.min.css'); */
 @import url('./partials/header.css');
 @import url('./partials/sidebar.css');
 @import url('./partials/cart.css');
@@ -14,9 +21,3 @@
 @import url('./partials/product.css');
 @import url('./partials/item.css');
 @import url('./partials/mediosDePago.css');
-@import url('./partials/addedToCart.css');
-
-@import url('./partials/login.css');
-@import url('./partials/register.css');
-@import url('./partials/contact.css');
-@import url('./partials/404.css')

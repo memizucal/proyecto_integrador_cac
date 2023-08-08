@@ -1,4 +1,4 @@
-const { getAllItems, getOneItem } = require('../services/itemsServices.js');
+const { getAllItems, getOneItem, createOneItem, deleteOneItem } = require('../services/itemsServices.js');
 
 const getItems = async (req, res) => {
 	const items = await getAllItems();
@@ -11,14 +11,18 @@ const getItem = async (req, res) => {
 }
 
 const createItem = async (req, res) => {	
+	const item = req.body;
+	await createOneItem(item);	
 }
 
 const updateItem = (req, res) => {
 	//Logica para editar un producto
 }
 
-const deleteItem = (req, res) => {
-	//Logica para borrar un item
+const deleteItem = async (req, res) => {
+	const item = req.params.item;	
+	await deleteOneItem(item);
+	res.send(item)
 }
 
 module.exports = {
